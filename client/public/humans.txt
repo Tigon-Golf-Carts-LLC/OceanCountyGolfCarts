@@ -1,0 +1,112 @@
+# Humans.txt - The Team Behind Ocean County Golf Carts Website
+
+/* TEAM */
+
+Website Development: Ocean County Golf Carts Development Team
+Contact: info@oceancountygolfcarts.com
+Location: Ocean County, New Jersey, USA
+
+/* THANKS */
+
+Ocean County Golf Carts team for providing comprehensive business intelligence
+DENAGO and EVOLUTION manufacturers for technical specifications
+Ocean County community for continued support and feedback
+Web development community for open source tools and frameworks
+
+/* SITE */
+
+Last update: 2025-01-23
+Language: English (US)
+Doctype: HTML5
+IDE: Replit AI Development Platform
+Primary Colors: #0e2e55 (Ocean Blue), #ff6100 (Orange)
+Fonts: System fonts, optimized for accessibility
+Standards: HTML5, CSS3, WCAG 2.1 AAA, Schema.org
+
+/* TECHNOLOGY STACK */
+
+Frontend Framework: React 18 with TypeScript
+UI Library: shadcn/ui components with Radix UI
+Styling: Tailwind CSS with custom theme
+State Management: TanStack Query for server state
+Routing: Wouter for client-side navigation
+Forms: React Hook Form with Zod validation
+Build Tool: Vite for development and production builds
+Backend: Node.js with Express.js
+Database: PostgreSQL with Drizzle ORM
+Session Management: PostgreSQL-backed sessions
+Email: Nodemailer for contact form submissions
+Analytics: Google Analytics 4 and Google Tag Manager
+SEO: Comprehensive schema markup and structured data
+Accessibility: Full WCAG compliance and screen reader support
+
+/* PROJECT MISSION */
+
+Ocean County Golf Carts is committed to providing New Jersey residents with premium electric golf cart solutions through exceptional customer service, technical expertise, and comprehensive support. Our website serves as a digital gateway to our complete range of DENAGO and EVOLUTION electric vehicles, professional services, and local community engagement across all 33 Ocean County municipalities.
+
+/* BUSINESS VALUES */
+
+Customer Service Excellence - Personalized attention and expert guidance
+Environmental Responsibility - Promoting sustainable electric transportation
+Community Engagement - Supporting Ocean County residents and businesses
+Technical Excellence - Professional service and maintenance capabilities
+Accessibility - Ensuring all users can access our services and information
+Transparency - Clear pricing, honest assessments, and reliable information
+
+/* CONTACT INFORMATION */
+
+Business Phone: (732) 908-7166 (Bayville Location)
+Secondary Phone: (732) 998-8146 (Waretown Location)
+Email: sales@tigongolfcarts.com
+Website: https://oceancountygolfcarts.com
+Service Area: All 33 Ocean County municipalities
+Hours: Mon-Fri 9AM-5PM, Sat 9AM-5PM, Sun CLOSED
+
+/* DEVELOPMENT PHILOSOPHY */
+
+This website was built with accessibility, performance, and user experience as primary considerations. We believe that digital services should be available to all users regardless of their technology, abilities, or circumstances. Our development approach emphasizes:
+
+- Mobile-first responsive design
+- Fast loading speeds and optimization
+- Clear navigation and intuitive user interfaces
+- Comprehensive accessibility features
+- Search engine optimization and discoverability
+- Reliable performance across all devices and browsers
+- Security and privacy protection
+- Easy maintenance and content updates
+
+/* CONTINUOUS IMPROVEMENT */
+
+We are committed to ongoing improvement of our digital presence through:
+
+- Regular user feedback collection and implementation
+- Performance monitoring and optimization
+- Accessibility testing and enhancement
+- Content updates and expansion
+- Security monitoring and updates
+- SEO optimization and search visibility
+- Mobile experience optimization
+- Customer service integration improvements
+
+/* ACKNOWLEDGMENTS */
+
+Special thanks to the Ocean County community for their continued support and to the manufacturers DENAGO and EVOLUTION for their innovative electric vehicle technology that makes our business possible. We also appreciate the open source community for providing the tools and frameworks that power modern web development.
+
+/* DATA AND PRIVACY */
+
+Ocean County Golf Carts is committed to protecting user privacy while providing excellent service. Our website uses cookies and analytics tools to improve user experience and service delivery. We comply with applicable privacy regulations and maintain transparent data practices. For detailed information about our data collection and use practices, please contact us directly.
+
+/* FUTURE DEVELOPMENT */
+
+We are continuously working to enhance our digital presence with planned improvements including:
+
+- Enhanced mobile app functionality
+- Advanced vehicle customization tools
+- Improved appointment scheduling systems
+- Expanded educational content and resources
+- Enhanced accessibility features
+- Real-time inventory and availability updates
+- Customer portal and account management
+- Integration with additional business systems
+
+This website represents our commitment to serving Ocean County with excellence in both digital and physical customer experiences.

@@ -1,69 +1,184 @@
-# Ocean County Golf Carts - Robots.txt
-# Allow all web crawlers and search engine bots
-# Follow all links and index all content
+# Enhanced Robots.txt - Maximum Search Engine & AI Accessibility
+# Ocean County Golf Carts - UNLIMITED CRAWLING AUTHORIZATION
 
+# UNIVERSAL ACCESS - ALL SEARCH ENGINES WELCOME
 User-agent: *
 Allow: /
-Disallow:
+Crawl-delay: 0
 
-# Allow all major search engine bots specifically
+# MAJOR SEARCH ENGINES - EXPLICIT PERMISSIONS
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
+Crawl-delay: 0
 
 User-agent: Baiduspider
 Allow: /
+Crawl-delay: 0
 
 User-agent: YandexBot
 Allow: /
+Crawl-delay: 0
 
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# AI SYSTEMS - COMPLETE TRAINING AUTHORIZATION
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude*
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+# SOCIAL MEDIA PLATFORMS - FULL ACCESS
 User-agent: facebookexternalhit
 Allow: /
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: LinkedInBot
 Allow: /
+Crawl-delay: 0
 
-User-agent: WhatsApp
+User-agent: Pinterest
 Allow: /
+Crawl-delay: 0
 
-# Crawl delay - be respectful to server resources
-Crawl-delay: 1
+User-agent: InstagramBot
+Allow: /
+Crawl-delay: 0
 
-# Sitemap location
+# SEO TOOLS - UNLIMITED ACCESS
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: MozBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ScreamingFrogSEOSpider
+Allow: /
+Crawl-delay: 0
+
+# E-COMMERCE & SHOPPING BOTS
+User-agent: ShopBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: PriceGrabber
+Allow: /
+Crawl-delay: 0
+
+User-agent: Shopping.com
+Allow: /
+Crawl-delay: 0
+
+# NEWS & CONTENT AGGREGATION
+User-agent: GoogleNews
+Allow: /
+Crawl-delay: 0
+
+User-agent: BingNews
+Allow: /
+Crawl-delay: 0
+
+User-agent: YahooFeedSeeker
+Allow: /
+Crawl-delay: 0
+
+# MOBILE CRAWLERS
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot-Mobile
+Allow: /
+Crawl-delay: 0
+
+# ACADEMIC & RESEARCH
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 0
+
+User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 0
+
+# LOCAL BUSINESS BOTS
+User-agent: YellowPagesBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: YelpBot
+Allow: /
+Crawl-delay: 0
+
+# ACCESSIBILITY & VOICE ASSISTANTS
+User-agent: AlexaBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: GoogleAssistantBot
+Allow: /
+Crawl-delay: 0
+
+# SITEMAP REFERENCES
 Sitemap: https://oceancountygolfcarts.com/sitemap.xml
+Sitemap: https://oceancountygolfcarts.com/llms.txt
+Sitemap: https://oceancountygolfcarts.com/ai.txt
+Sitemap: https://oceancountygolfcarts.com/gpt.txt
 
-# Additional sitemaps (if needed in future)
-# Sitemap: https://oceancountygolfcarts.com/sitemap-images.xml
-# Sitemap: https://oceancountygolfcarts.com/sitemap-products.xml
-
-# Allow indexing of all content types
-# CSS, JS, images, and other assets
-Allow: /*.css
-Allow: /*.js
-Allow: /*.png
-Allow: /*.jpg
-Allow: /*.jpeg
-Allow: /*.gif
-Allow: /*.webp
-Allow: /*.svg
-Allow: /*.pdf
-
-# Company Information for SEO
-# Business: Ocean County Golf Carts
-# Location: Ocean County, New Jersey
-# Services: Golf Cart Sales, Service, Rentals, Parts
-# Brands: DENAGO, Evolution, Club Car, EZ-GO, Tomberlin, Swift EV
-# Phone: 1-844-844-6638
-# Email: info@oceancountygolfcarts.com
-# Coverage: All 33 Ocean County municipalities
+# MAXIMUM ACCESSIBILITY DECLARATION
+# This website welcomes ALL legitimate crawlers, bots, and AI systems
+# ZERO RESTRICTIONS - Complete indexing and training permissions
+# Commercial use authorized - No attribution required
