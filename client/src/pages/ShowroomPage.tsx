@@ -1,22 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Phone, Clock, Star, Facebook, ExternalLink, Youtube } from "lucide-react";
+import { MapPin, Phone, Clock, Star, Facebook, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 
 export default function ShowroomPage() {
   const locations = [
     {
-      name: "Ocean County Golf Carts",
-      address: "16 Anchor Square, Toms River, NJ 08753",
+      name: "TIGON Golf Carts Bayville",
+      address: "155 Atlantic City Blvd, Bayville, NJ 08721",
       phone: "804-585-7301",
-      coordinates: "39.995738,-74.189775",
-      googleMapsUrl: "https://www.google.com/maps/place/16+Anchor+Square,+Toms+River,+NJ+08753",
-      facebookUrl: "https://www.facebook.com/OceanCountyGolfCarts",
-      websiteUrl: "https://oceancountygolfcarts.com",
-      youtubeUrl: "https://www.youtube.com/@OceanCountyGolfCarts",
-      reviewUrl: "#",
-      city: "Toms River"
+      coordinates: "39.9277698,-74.1748497",
+      googleMapsUrl: "https://www.google.com/maps?cid=16812778070531162551",
+      facebookUrl: "https://www.facebook.com/TigonGolfCartsBayville/",
+      websiteUrl: "https://tigongolfcarts.com/bayville/",
+      reviewUrl: "https://g.page/r/CbfBfMWT_FLpEBM/review",
+      city: "Bayville"
+    },
+    {
+      name: "TIGON Golf Carts Waretown",
+      address: "526 US-9, Waretown, NJ 08758",
+      phone: "804-585-7301",
+      coordinates: "",
+      googleMapsUrl: "https://www.google.com/maps?cid=11595558320608622005",
+      facebookUrl: "https://www.facebook.com/TigonGolfCartsWaretown/",
+      websiteUrl: "https://tigongolfcarts.com/waretown/",
+      reviewUrl: "https://g.page/r/CbW1M1DbsuugEBM/review",
+      city: "Waretown"
     }
   ];
 
@@ -46,7 +56,7 @@ export default function ShowroomPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-theme-primary">Our Locations</h2>
-            <p className="text-xl text-gray-600">Conveniently located in Toms River serving Ocean County and surrounding areas</p>
+            <p className="text-xl text-gray-600">Two convenient locations serving Ocean County and surrounding areas</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -126,13 +136,13 @@ export default function ShowroomPage() {
                          className="text-gray-600 hover:text-blue-600 transition-colors">
                         <Facebook className="w-5 h-5" />
                       </a>
-                      <a href={location.youtubeUrl} target="_blank" rel="noopener noreferrer" 
-                         className="text-gray-600 hover:text-red-600 transition-colors">
-                        <Youtube className="w-5 h-5" />
-                      </a>
                       <a href={location.websiteUrl} target="_blank" rel="noopener noreferrer"
                          className="text-gray-600 hover:text-theme-orange transition-colors">
                         <ExternalLink className="w-5 h-5" />
+                      </a>
+                      <a href={location.reviewUrl} target="_blank" rel="noopener noreferrer"
+                         className="text-gray-600 hover:text-yellow-500 transition-colors">
+                        <Star className="w-5 h-5" />
                       </a>
                     </div>
                   </div>
@@ -204,7 +214,7 @@ export default function ShowroomPage() {
             Ready to Visit Our Showroom?
           </h2>
           <p className="text-xl mb-8">
-            Stop by our convenient Toms River location to see our full inventory of DENAGO and EVOLUTION golf carts.
+            Stop by either of our convenient Ocean County locations to see our full inventory of DENAGO and EVOLUTION golf carts.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
