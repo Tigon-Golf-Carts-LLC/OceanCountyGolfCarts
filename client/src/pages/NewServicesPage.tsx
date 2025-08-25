@@ -47,24 +47,32 @@ export default function NewServicesPage() {
       
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
+        <section 
+          className="relative text-white py-32"
+          style={{
+            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.85), rgba(14, 46, 85, 0.85)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=800')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
                 Professional Golf Cart Services
               </h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
                 Keep your golf cart running smoothly with our comprehensive service offerings. 
                 From routine maintenance to major repairs, our certified technicians have you covered.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
+                  <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                     Schedule Service
                   </Button>
                 </Link>
                 <a href="tel:804-585-7301">
-                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-green-600">
+                  <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-ocean-blue">
                     Call for Emergency Service
                   </Button>
                 </a>

@@ -52,13 +52,21 @@ export default function NewInventoryPage() {
       
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-green-600 text-white py-16">
+        <section 
+          className="relative text-white py-32"
+          style={{
+            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.8), rgba(14, 46, 85, 0.8)), url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=800')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
                 Golf Cart Inventory
               </h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
                 Discover our extensive selection of premium golf carts from leading brands. 
                 New arrivals, certified pre-owned, and custom builds available.
               </p>
