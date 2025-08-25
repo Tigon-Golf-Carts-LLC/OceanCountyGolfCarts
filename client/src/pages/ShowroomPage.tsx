@@ -9,7 +9,7 @@ export default function ShowroomPage() {
     {
       name: "TIGON Golf Carts Bayville",
       address: "155 Atlantic City Blvd, Bayville, NJ 08721",
-      phone: "(732) 908-7166",
+      phone: "804-585-7301",
       coordinates: "39.9277698,-74.1748497",
       googleMapsUrl: "https://www.google.com/maps?cid=16812778070531162551",
       facebookUrl: "https://www.facebook.com/TigonGolfCartsBayville/",
@@ -20,7 +20,7 @@ export default function ShowroomPage() {
     {
       name: "TIGON Golf Carts Waretown",
       address: "526 US-9, Waretown, NJ 08758",
-      phone: "(732) 998-8146",
+      phone: "804-585-7301",
       coordinates: "",
       googleMapsUrl: "https://www.google.com/maps?cid=11595558320608622005",
       facebookUrl: "https://www.facebook.com/TigonGolfCartsWaretown/",

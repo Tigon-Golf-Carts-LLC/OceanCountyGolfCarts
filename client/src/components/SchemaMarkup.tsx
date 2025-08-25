@@ -24,7 +24,7 @@ export const generateOrganizationSchema = () => ({
     "https://oceancountygolfcarts.com/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg",
     "https://oceancountygolfcarts.com/attached_assets/OCEAN COUNTY GOLF CARTS_1753196019170.jpeg"
   ],
-  "telephone": "1-844-844-6638",
+  "telephone": "804-585-7301",
   "email": "sales@tigongolfcarts.com",
   "address": {
     "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export const generateLocalBusinessSchema = () => ({
   "name": "Ocean County Golf Carts",
   "description": "Premier golf cart dealer serving all 33 Ocean County municipalities with electric vehicle sales, service, and rentals.",
   "url": "https://oceancountygolfcarts.com",
-  "telephone": "1-844-844-6638",
+  "telephone": "804-585-7301",
   "email": "sales@tigongolfcarts.com",
   "priceRange": "$$$",
   "currenciesAccepted": "USD",
@@ -311,7 +311,7 @@ export const generateContactPageSchema = () => ({
     "contactPoint": [
       {
         "@type": "ContactPoint",
-        "telephone": "1-844-844-6638",
+        "telephone": "804-585-7301",
         "contactType": "customer service",
         "areaServed": "US",
         "availableLanguage": "English"

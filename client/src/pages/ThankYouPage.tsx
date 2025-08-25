@@ -57,10 +57,10 @@ export default function ThankYouPage() {
                 </p>
                 <div className="space-y-3">
                   <a 
-                    href="tel:1-844-844-6638" 
+                    href="tel:804-585-7301" 
                     className="block text-2xl font-bold text-theme-orange hover:text-orange-300 transition-colors"
                   >
-                    1-844-844-6638
+                    804-585-7301
                   </a>
                   <div className="text-sm text-gray-300">
                     <p>Monday-Friday: 9:00 AM - 5:00 PM</p>

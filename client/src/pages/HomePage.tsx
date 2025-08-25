@@ -480,35 +480,35 @@ Ocean County Golf Carts Premier Dealership
               <MapPin className="w-8 h-8 text-blue-500 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Ocean View</h3>
               <p className="text-sm text-gray-600 mb-2">101 NJ 50, Ocean View, NJ 08230</p>
-              <p className="text-blue-600 font-semibold">609-840-0404</p>
+              <p className="text-blue-600 font-semibold">804-585-7301</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <MapPin className="w-8 h-8 text-blue-500 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Bayville</h3>
               <p className="text-sm text-gray-600 mb-2">155 Atlantic City Blvd, Bayville, NJ 08721</p>
-              <p className="text-blue-600 font-semibold">(732) 908-7166</p>
+              <p className="text-blue-600 font-semibold">804-585-7301</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <MapPin className="w-8 h-8 text-blue-500 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Waretown</h3>
               <p className="text-sm text-gray-600 mb-2">526 US 9, Waretown, NJ 08758</p>
-              <p className="text-blue-600 font-semibold">(732) 998-8146</p>
+              <p className="text-blue-600 font-semibold">804-585-7301</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <MapPin className="w-8 h-8 text-blue-500 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Pleasantville</h3>
               <p className="text-sm text-gray-600 mb-2">7000 Black Horse Pike, Pleasantville, NJ 08232</p>
-              <p className="text-blue-600 font-semibold">640-444-3094</p>
+              <p className="text-blue-600 font-semibold">804-585-7301</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
               <MapPin className="w-8 h-8 text-blue-500 mx-auto mb-3" />
               <h3 className="font-semibold text-gray-900 mb-2">Ocean County Golf Carts</h3>
               <p className="text-sm text-gray-600 mb-2">Ocean County</p>
-              <p className="text-blue-600 font-semibold">1-844-844-6638</p>
+              <p className="text-blue-600 font-semibold">804-585-7301</p>
             </div>
           </div>
 
@@ -516,7 +516,7 @@ Ocean County Golf Carts Premier Dealership
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Main Contact</h3>
             <p className="text-gray-600 mb-4">For general inquiries and support</p>
             <div className="flex justify-center items-center gap-4">
-              <span className="text-2xl font-bold text-blue-600">1-844-844-6638</span>
+              <span className="text-2xl font-bold text-blue-600">804-585-7301</span>
               <Button className="bg-theme-orange hover:bg-orange-600 text-white">
                 Contact Us
               </Button>

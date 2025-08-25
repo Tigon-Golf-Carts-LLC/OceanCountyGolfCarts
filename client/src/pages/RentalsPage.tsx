@@ -257,7 +257,7 @@ export default function RentalsPage() {
               Our friendly team is here to help you select the perfect golf cart rental for your needs. Whether it's for a special event, vacation, or business use, we have the right cart at the right price.
             </p>
             <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
-              Call Now 1-844-844-6638
+              Call Now 804-585-7301
             </Button>
           </div>
         </section>

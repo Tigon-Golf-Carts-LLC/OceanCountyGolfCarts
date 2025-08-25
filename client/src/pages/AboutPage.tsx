@@ -268,7 +268,7 @@ export default function AboutPage() {
               Visit Our Showroom
             </Button>
             <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600">
-              Call 1-844-844-6638
+              Call 804-585-7301
             </Button>
           </div>
         </div>

@@ -63,7 +63,7 @@ export default function Navigation() {
             
             <div className="flex items-center space-x-4">
               <Button className="bg-theme-orange hover:bg-orange-600 text-white px-4 py-2 text-sm font-medium">
-                Call Now 1-844-844-6638
+                Call Now 804-585-7301
               </Button>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Navigation() {
                   ))}
                   <div className="border-t pt-4 mt-4">
                     <Button className="bg-theme-orange hover:bg-orange-600 text-white w-full">
-                      Call Now 1-844-844-6638
+                      Call Now 804-585-7301
                     </Button>
                   </div>
                 </div>

@@ -123,7 +123,7 @@ export default function InventoryPage() {
               </Button>
             </Link>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 w-full sm:w-auto">
-              Call (732) 908-7166
+              Call 804-585-7301
             </Button>
           </div>
         </div>

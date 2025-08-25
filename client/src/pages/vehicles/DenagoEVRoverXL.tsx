@@ -226,9 +226,9 @@ export default function DenagoEVRoverXL() {
                   Contact Us Today
                 </Button>
               </Link>
-              <a href="tel:1-844-844-6638">
+              <a href="tel:804-585-7301">
                 <Button size="lg" variant="outline" className="text-gray-900 bg-white border-white hover:bg-gray-100 hover:text-theme-primary">
-                  Call 1-844-844-6638
+                  Call 804-585-7301
                 </Button>
               </a>
             </div>
@@ -245,7 +245,7 @@ export default function DenagoEVRoverXL() {
                   <CardTitle>Call Today</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-2xl font-bold text-theme-primary mb-2">1-844-844-6638</p>
+                  <p className="text-2xl font-bold text-theme-primary mb-2">804-585-7301</p>
                   <p className="text-gray-600">Speak with our DENAGO specialists</p>
                 </CardContent>
               </Card>

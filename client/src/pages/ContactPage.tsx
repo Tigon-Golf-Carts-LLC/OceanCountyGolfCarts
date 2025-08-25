@@ -77,7 +77,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Bayville Phone",
-      value: "(732) 908-7166",
+      value: "804-585-7301",
     },
     {
       icon: MapPin,
@@ -87,7 +87,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       label: "Waretown Phone",
-      value: "(732) 998-8146",
+      value: "804-585-7301",
     },
     {
       icon: Mail,

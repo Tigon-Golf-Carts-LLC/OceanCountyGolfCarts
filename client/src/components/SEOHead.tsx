@@ -127,7 +127,7 @@ export default function SEOHead({
           "addressRegion": "NJ",
           "addressCountry": "US"
         },
-        "telephone": "1-844-844-6638",
+        "telephone": "804-585-7301",
         "url": canonicalUrl,
         "serviceArea": {
           "@type": "GeoCircle",
