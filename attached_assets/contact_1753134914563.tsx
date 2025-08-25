@@ -37,8 +37,8 @@ export default function Contact() {
   return (
     <div>
       <SEOHead
-        title="Contact NJ Golf Carts - Sales, Service & Support | 1-844-844-6638"
-        description="Contact NJ Golf Carts for sales, service, and support. Call 1-844-844-6638 or visit our Newark location. Mon-Fri 9AM-5PM, Sat 9AM-5PM."
+        title="Contact NJ Golf Carts - Sales, Service & Support | 804-585-7301"
+        description="Contact NJ Golf Carts for sales, service, and support. Call 804-585-7301 or visit our Newark location. Mon-Fri 9AM-5PM, Sat 9AM-5PM."
         keywords="contact NJ Golf Carts, phone number, location, hours, Newark New Jersey"
       />
       <Navigation />
@@ -93,7 +93,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-accent mr-3" />
                     <div>
-                      <a href="tel:609-840-0404" className="text-primary font-semibold">609-840-0404</a>
+                      <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -121,7 +121,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-accent mr-3" />
                     <div>
-                      <a href="tel:732-908-7166" className="text-primary font-semibold">(732) 908-7166</a>
+                      <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -149,7 +149,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-accent mr-3" />
                     <div>
-                      <a href="tel:732-998-8146" className="text-primary font-semibold">(732) 998-8146</a>
+                      <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -177,7 +177,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-accent mr-3" />
                     <div>
-                      <a href="tel:640-444-3094" className="text-primary font-semibold">640-444-3094</a>
+                      <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -205,7 +205,7 @@ export default function Contact() {
                   <div className="flex items-center">
                     <Phone className="h-5 w-5 text-accent mr-3" />
                     <div>
-                      <a href="tel:1-844-844-6638" className="text-primary font-semibold">1-844-844-6638</a>
+                      <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -226,7 +226,7 @@ export default function Contact() {
                 We have multiple locations throughout New Jersey to serve you better. Each location offers full sales, service, and parts support.
               </p>
               <p className="text-gray-600">
-                <strong>Main Contact:</strong> <a href="tel:1-844-844-6638" className="text-primary font-semibold">1-844-844-6638</a> | 
+                <strong>Main Contact:</strong> <a href="tel:804-585-7301" className="text-primary font-semibold">804-585-7301</a> | 
                 <strong> Email:</strong> <a href="mailto:info@njgolfcarts.com" className="text-primary">info@njgolfcarts.com</a>
               </p>
             </div>

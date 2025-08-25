@@ -76,7 +76,7 @@ export default function ContactSection() {
                   <Phone className="h-5 w-5 text-accent mr-4" />
                   <div>
                     <div className="font-semibold text-neutral-dark">Phone</div>
-                    <div className="text-gray-600">1-844-844-6638</div>
+                    <div className="text-gray-600">804-585-7301</div>
                   </div>
                 </div>
 

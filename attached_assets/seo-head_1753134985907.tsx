@@ -100,7 +100,7 @@ export default function SEOHead({
     updateMetaTag('business:contact_data:locality', 'Newark');
     updateMetaTag('business:contact_data:region', 'New Jersey');
     updateMetaTag('business:contact_data:country_name', 'United States');
-    updateMetaTag('business:contact_data:phone_number', '1-844-844-6638');
+    updateMetaTag('business:contact_data:phone_number', '804-585-7301');
     updateMetaTag('business:contact_data:email', 'info@njgolfcarts.com');
     
     // Update favicon

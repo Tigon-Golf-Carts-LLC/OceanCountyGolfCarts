@@ -167,7 +167,7 @@ export default function Rentals() {
               <Button 
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-white"
-                onClick={() => window.open("tel:1-844-844-6638")}
+                onClick={() => window.open("tel:804-585-7301")}
               >
                 <Phone className="w-4 h-4 mr-2" />
                 Call to Book Now
@@ -249,7 +249,7 @@ export default function Rentals() {
                       </div>
                       <Button 
                         className="w-full bg-accent hover:bg-accent/90"
-                        onClick={() => window.open("tel:1-844-844-6638")}
+                        onClick={() => window.open("tel:804-585-7301")}
                       >
                         <Phone className="w-4 h-4 mr-2" />
                         RESERVE TODAY
@@ -275,7 +275,7 @@ export default function Rentals() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary/90"
-              onClick={() => window.open("tel:1-844-844-6638")}
+              onClick={() => window.open("tel:804-585-7301")}
             >
               <Phone className="w-4 h-4 mr-2" />
               Book Your Rental Today!

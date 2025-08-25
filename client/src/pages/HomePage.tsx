@@ -50,7 +50,7 @@ Ocean County Golf Carts Premier Dealership
                   </Button>
                 </Link>
                 <Button size="lg" variant="outline" className="text-gray-900 bg-white border-white hover:bg-gray-100 hover:text-gray-900 w-full sm:w-auto">
-                  Call Now 1-844-844-6638
+                  Call Now 804-585-7301
                 </Button>
               </div>
             </div>

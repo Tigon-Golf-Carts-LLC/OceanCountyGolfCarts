@@ -255,8 +255,8 @@ export default function Home() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Ocean View</h3>
                 <p className="text-gray-600 mb-2">101 NJ-50, Ocean View, NJ 08230</p>
-                <a href="tel:609-840-0404" className="text-primary font-semibold block mb-4">
-                  609-840-0404
+                <a href="tel:804-585-7301" className="text-primary font-semibold block mb-4">
+                  804-585-7301
                 </a>
                 <div className="space-y-1">
                   <a href="https://www.google.com/maps?cid=6446924254429489274" target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline">Google Maps</a>
@@ -272,8 +272,8 @@ export default function Home() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Bayville</h3>
                 <p className="text-gray-600 mb-2">155 Atlantic City Blvd, Bayville, NJ 08721</p>
-                <a href="tel:732-908-7166" className="text-primary font-semibold block mb-4">
-                  (732) 908-7166
+                <a href="tel:804-585-7301" className="text-primary font-semibold block mb-4">
+                  804-585-7301
                 </a>
                 <div className="space-y-1">
                   <a href="https://www.google.com/maps?cid=16812778070531162551" target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline">Google Maps</a>
@@ -289,8 +289,8 @@ export default function Home() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Waretown</h3>
                 <p className="text-gray-600 mb-2">526 US-9, Waretown, NJ 08758</p>
-                <a href="tel:732-998-8146" className="text-primary font-semibold block mb-4">
-                  (732) 998-8146
+                <a href="tel:804-585-7301" className="text-primary font-semibold block mb-4">
+                  804-585-7301
                 </a>
                 <div className="space-y-1">
                   <a href="https://www.google.com/maps?cid=11595558320608622005" target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline">Google Maps</a>
@@ -306,8 +306,8 @@ export default function Home() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Pleasantville</h3>
                 <p className="text-gray-600 mb-2">7000 Black Horse Pike, Pleasantville, NJ 08232</p>
-                <a href="tel:640-444-3094" className="text-primary font-semibold block mb-4">
-                  640-444-3094
+                <a href="tel:804-585-7301" className="text-primary font-semibold block mb-4">
+                  804-585-7301
                 </a>
                 <div className="space-y-1">
                   <a href="https://www.google.com/maps?cid=7635149767591436869" target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline">Google Maps</a>
@@ -323,8 +323,8 @@ export default function Home() {
                 <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">New Jersey</h3>
                 <p className="text-gray-600 mb-2">New Jersey</p>
-                <a href="tel:1-844-844-6638" className="text-primary font-semibold block mb-4">
-                  1-844-844-6638
+                <a href="tel:804-585-7301" className="text-primary font-semibold block mb-4">
+                  804-585-7301
                 </a>
                 <div className="space-y-1">
                   <a href="https://www.google.com/maps?cid=15178469885958324473" target="_blank" rel="noopener noreferrer" className="block text-sm text-primary hover:underline">Google Maps</a>
@@ -339,8 +339,8 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-4">Main Contact</h3>
             <p className="text-gray-600 mb-4">For general inquiries and support</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="tel:1-844-844-6638" className="text-primary font-semibold text-xl">
-                1-844-844-6638
+              <a href="tel:804-585-7301" className="text-primary font-semibold text-xl">
+                804-585-7301
               </a>
               <span className="text-gray-400 hidden sm:block">|</span>
               <Button asChild className="bg-accent hover:bg-accent/90">

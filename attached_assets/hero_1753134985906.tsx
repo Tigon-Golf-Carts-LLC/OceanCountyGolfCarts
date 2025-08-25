@@ -62,10 +62,10 @@ export default function Hero() {
             size="lg"
             variant="outline"
             className="border-2 border-white text-white hover:bg-white hover:text-neutral-dark px-8 py-4 text-lg font-semibold shadow-lg"
-            onClick={() => window.open("tel:1-844-844-6638")}
+            onClick={() => window.open("tel:804-585-7301")}
           >
             <Phone className="mr-2 h-5 w-5" />
-            Call 1-844-844-6638
+            Call 804-585-7301
           </Button>
         </div>
 

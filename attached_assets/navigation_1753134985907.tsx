@@ -59,8 +59,8 @@ export default function Navigation() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="text-right">
               <p className="text-sm text-gray-600">Call Now</p>
-              <a href="tel:1-844-844-6638" className="text-primary font-semibold">
-                1-844-844-6638
+              <a href="tel:804-585-7301" className="text-primary font-semibold">
+                804-585-7301
               </a>
             </div>
             <Button asChild className="bg-accent hover:bg-accent/90">
@@ -99,9 +99,9 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="pt-2 border-t border-gray-200">
-              <a href="tel:1-844-844-6638" className="block py-2 text-primary font-semibold">
+              <a href="tel:804-585-7301" className="block py-2 text-primary font-semibold">
                 <Phone className="inline w-4 h-4 mr-2" />
-                1-844-844-6638
+                804-585-7301
               </a>
             </div>
           </nav>

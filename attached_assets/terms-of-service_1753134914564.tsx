@@ -154,7 +154,7 @@ export default function TermsOfService() {
                     If you have any questions about these terms of service, please contact us:
                   </p>
                   <ul className="list-none space-y-2">
-                    <li><strong>Phone:</strong> <a href="tel:1-844-844-6638" className="text-primary hover:underline">1-844-844-6638</a></li>
+                    <li><strong>Phone:</strong> <a href="tel:804-585-7301" className="text-primary hover:underline">804-585-7301</a></li>
                     <li><strong>Email:</strong> <a href="mailto:info@njgolfcarts.com" className="text-primary hover:underline">info@njgolfcarts.com</a></li>
                   </ul>
                 </div>

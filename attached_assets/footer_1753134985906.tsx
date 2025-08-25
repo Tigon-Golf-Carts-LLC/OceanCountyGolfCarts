@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <div>Phone: 1-844-844-6638</div>
+              <div>Phone: 804-585-7301</div>
               <div>Email: info@njgolfcarts.com</div>
               <div>
                 <strong className="text-white">Hours:</strong><br />

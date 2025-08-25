@@ -64,6 +64,6 @@ Allow: /*.pdf
 # Location: Ocean County, New Jersey
 # Services: Golf Cart Sales, Service, Rentals, Parts
 # Brands: DENAGO, Evolution, Club Car, EZ-GO, Tomberlin, Swift EV
-# Phone: 1-844-844-6638
+# Phone: 804-585-7301
 # Email: info@oceancountygolfcarts.com
 # Coverage: All 33 Ocean County municipalities

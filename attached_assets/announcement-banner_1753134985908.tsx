@@ -12,8 +12,8 @@ export default function AnnouncementBanner() {
         <p className="text-sm md:text-base font-medium">
           🎉 <strong>Winter Special:</strong> 0% APR Financing Available + FREE Delivery within 50 miles! 
           <span className="ml-2">
-            <a href="tel:1-844-844-6638" className="underline hover:no-underline">
-              Call 1-844-844-6638
+            <a href="tel:804-585-7301" className="underline hover:no-underline">
+              Call 804-585-7301
             </a>
           </span>
         </p>
