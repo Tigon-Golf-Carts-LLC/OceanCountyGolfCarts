@@ -58,6 +58,7 @@ export default function Footer() {
           <div className="md:hidden">
             <div className="space-y-2">
               <p className="text-gray-900 font-semibold text-sm">Phone: 804-585-7301</p>
+              <p className="text-gray-600 text-sm">16 Anchor Square, Toms River, NJ 08753</p>
               <p className="text-gray-600 text-sm">Email: info@oceancountygolfcarts.com</p>
               <div className="text-gray-600 text-sm">
                 <p>Mon-Fri: 9AM-5PM</p>
@@ -106,6 +107,7 @@ export default function Footer() {
             <div className="md:col-span-1">
               <div className="space-y-2">
                 <p className="text-gray-900 font-semibold text-sm">Phone: 804-585-7301</p>
+                <p className="text-gray-600 text-sm">16 Anchor Square, Toms River, NJ 08753</p>
                 <p className="text-gray-600 text-sm">Email: info@oceancountygolfcarts.com</p>
                 <div className="text-gray-600 text-sm">
                   <p>Mon-Fri: 9AM-5PM</p>
