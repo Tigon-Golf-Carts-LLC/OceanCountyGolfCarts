@@ -9,6 +9,7 @@ import { Search, Filter, Star, Phone, MapPin, Clock } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
 import type { Vehicle } from "@shared/schema";
+import inventoryHeroImage from "@assets/Ocean County New Jersey Golf Carts_1756131126751.png";
 
 export default function NewInventoryPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,7 +56,7 @@ export default function NewInventoryPage() {
         <section 
           className="relative text-white py-32"
           style={{
-            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.8), rgba(14, 46, 85, 0.8)), url('https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=800')`,
+            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.7), rgba(14, 46, 85, 0.7)), url('${inventoryHeroImage}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'

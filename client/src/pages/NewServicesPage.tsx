@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Wrench, Battery, Paintbrush, Shield, Clock, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import serviceHeroImage from "@assets/Ocean County New Jersey Golf Carts (3)_1756131126750.png";
 
 export default function NewServicesPage() {
   const services = [
@@ -50,7 +51,7 @@ export default function NewServicesPage() {
         <section 
           className="relative text-white py-32"
           style={{
-            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.85), rgba(14, 46, 85, 0.85)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=800')`,
+            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.75), rgba(14, 46, 85, 0.75)), url('${serviceHeroImage}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'

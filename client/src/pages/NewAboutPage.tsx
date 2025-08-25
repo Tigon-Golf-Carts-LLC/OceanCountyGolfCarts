@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Users, Award, Target, Heart, Phone, Mail, MapPin, Calendar } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import aboutHeroImage from "@assets/Ocean County New Jersey Golf Carts (1)_1756131126751.png";
 
 export default function NewAboutPage() {
   const teamMembers = [
@@ -69,7 +70,7 @@ export default function NewAboutPage() {
         <section 
           className="relative text-white py-32"
           style={{
-            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.8), rgba(14, 46, 85, 0.8)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=800')`,
+            backgroundImage: `linear-gradient(rgba(14, 46, 85, 0.7), rgba(14, 46, 85, 0.7)), url('${aboutHeroImage}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
