@@ -100,11 +100,12 @@ This email was sent from the Ocean County Golf Carts contact form.
 Respond directly to this email to contact the customer.
     `;
 
-    // Send to all three email addresses
+    // Send to all four email addresses
     const recipients = [
       'info@oceancountygolfcarts.com',
       'sales@tigongolfcarts.com',
-      'tigongolfcarts@gmail.com'
+      'tigongolfcarts@gmail.com',
+      'oceancountygolfcarts@gmail.com'
     ];
 
     // Email options

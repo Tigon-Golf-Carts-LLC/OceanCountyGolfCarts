@@ -1,7 +1,11 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { createServer } from "http";
+import { config } from "dotenv";
 import routes from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+
+// Load environment variables
+config();
 
 const app = express();
 app.use(express.json());
