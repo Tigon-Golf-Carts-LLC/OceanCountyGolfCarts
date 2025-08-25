@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Award, MapPin, Clock, Heart, Target } from "lucide-react";
+import { Users, Award, MapPin, Clock, Heart, Target, Facebook, Youtube, CreditCard, Wifi, Shield } from "lucide-react";
 
 
 export default function AboutPage() {
@@ -202,13 +202,21 @@ export default function AboutPage() {
                 multiple counties in the region. Our commitment to quality service extends 
                 across our service area.
               </p>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-4">
                 <MapPin className="w-6 h-6 text-blue-600" />
-                <span className="text-gray-700">Statewide delivery available</span>
+                <span className="text-gray-700">16 Anchor Square, Toms River, NJ 08753</span>
               </div>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-4">
                 <Clock className="w-6 h-6 text-blue-600" />
                 <span className="text-gray-700">Monday-Friday: 9AM-5PM, Saturday: 9AM-5PM</span>
+              </div>
+              <div className="flex items-center gap-4 mb-4">
+                <Facebook className="w-6 h-6 text-blue-600" />
+                <a href="https://www.facebook.com/OceanCountyGolfCarts" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Facebook Page</a>
+              </div>
+              <div className="flex items-center gap-4 mb-6">
+                <Youtube className="w-6 h-6 text-red-600" />
+                <a href="https://www.youtube.com/@OceanCountyGolfCarts" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:underline">YouTube Channel</a>
               </div>
               <Button className="bg-theme-orange hover:bg-orange-600 text-white">
                 Contact Us Today
@@ -218,37 +226,91 @@ export default function AboutPage() {
             {/* Google Maps Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392226.73214689275!2d-74.58890416124524!3d39.8233335737933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c16c287049b687%3A0x8c25d4d20966015a!2sOcean%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1753141001225!5m2!1sen!2sus" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.7814624747463!2d-74.18977588459!3d39.995737979417864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c16c3c123d4567%3A0x1234567890abcdef!2s16%20Anchor%20Square%2C%20Toms%20River%2C%20NJ%2008753!5e0!3m2!1sen!2sus!4v1756126800000!5m2!1sen!2sus" 
                 width="100%" 
                 height="450" 
                 style={{border:0}}
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ocean County, NJ Map"
+                title="Ocean County Golf Carts - 16 Anchor Square, Toms River, NJ"
               />
             </div>
           </div>
           
-          {/* Towns List Below Map */}
-          <div className="mt-12 bg-blue-50 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4 text-center">Ocean County Towns We Serve</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-sm text-gray-700">
-              {[
-                "Barnegat Township", "Barnegat Light Borough", "Bay Head Borough", "Beach Haven Borough",
-                "Beachwood Borough", "Berkeley Township", "Brick Township", "Eagleswood Township",
-                "Harvey Cedars Borough", "Island Heights Borough", "Jackson Township", "Lacey Township",
-                "Lakehurst Borough", "Lakewood Township", "Lavallette Borough", "Little Egg Harbor Township",
-                "Long Beach Township", "Manchester Township", "Mantoloking Borough", "Ocean Gate Borough",
-                "Ocean Township", "Pine Beach Borough", "Plumsted Township", "Point Pleasant Borough",
-                "Point Pleasant Beach Borough", "Seaside Heights Borough", "Seaside Park Borough", "Ship Bottom Borough",
-                "South Toms River Borough", "Stafford Township", "Surf City Borough", "Toms River Township",
-                "Tuckerton Borough"
-              ].map((town, index) => (
-                <div key={index} className="py-1">
-                  {town}
+          {/* Business Information & Towns List */}
+          <div className="mt-12 grid lg:grid-cols-2 gap-8">
+            {/* Business Attributes */}
+            <div className="bg-blue-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold mb-6 text-center">Business Information</h3>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                    <Users className="w-4 h-4 mr-2" />
+                    Business Type
+                  </h4>
+                  <p className="text-gray-600 text-sm">Small business</p>
                 </div>
-              ))}
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                    <CreditCard className="w-4 h-4 mr-2" />
+                    Payments
+                  </h4>
+                  <div className="text-gray-600 text-sm space-y-1">
+                    <p>• Accepts credit cards</p>
+                    <p>• Accepts debit cards</p>
+                    <p>• Not cash-only</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                    <Shield className="w-4 h-4 mr-2" />
+                    Service Options
+                  </h4>
+                  <div className="text-gray-600 text-sm space-y-1">
+                    <p>• Offers delivery</p>
+                    <p>• Appointment required</p>
+                    <p>• Onsite services not available</p>
+                    <p>• No in-store shopping</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                    <Heart className="w-4 h-4 mr-2" />
+                    Community
+                  </h4>
+                  <div className="text-gray-600 text-sm space-y-1">
+                    <p>• LGBTQ+ friendly</p>
+                    <p>• Transgender safespace</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Towns Served */}
+            <div className="bg-green-50 p-8 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4 text-center">Ocean County Towns We Serve</h3>
+              <div className="grid grid-cols-1 gap-2 text-sm text-gray-700">
+                {[
+                  "Barnegat Township", "Barnegat Light Borough", "Bay Head Borough", "Beach Haven Borough",
+                  "Beachwood Borough", "Berkeley Township", "Brick Township", "Eagleswood Township",
+                  "Harvey Cedars Borough", "Island Heights Borough", "Jackson Township", "Lacey Township",
+                  "Lakehurst Borough", "Lakewood Township", "Lavallette Borough", "Little Egg Harbor Township",
+                  "Long Beach Township", "Manchester Township", "Mantoloking Borough", "Ocean Gate Borough",
+                  "Ocean Township", "Pine Beach Borough", "Plumsted Township", "Point Pleasant Borough",
+                  "Point Pleasant Beach Borough", "Seaside Heights Borough", "Seaside Park Borough", "Ship Bottom Borough",
+                  "South Toms River Borough", "Stafford Township", "Surf City Borough", "Toms River Township",
+                  "Tuckerton Borough"
+                ].map((town, index) => (
+                  <div key={index} className="py-1">
+                    {town}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

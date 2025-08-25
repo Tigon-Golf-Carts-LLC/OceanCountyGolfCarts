@@ -123,8 +123,10 @@ export default function SEOHead({
         "description": description,
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": townName,
+          "streetAddress": "16 Anchor Square",
+          "addressLocality": "Toms River",
           "addressRegion": "NJ",
+          "postalCode": "08753",
           "addressCountry": "US"
         },
         "telephone": "804-585-7301",

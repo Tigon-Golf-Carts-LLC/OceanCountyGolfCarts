@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { MapPin, Phone, Mail, Globe, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, Clock, Facebook, Youtube, CreditCard, Wifi, Users, Car, Shield } from "lucide-react";
 import { contactFormSchema, ContactForm } from "@shared/schema";
 
 export default function ContactPage() {
@@ -71,22 +71,12 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: MapPin,
-      label: "Bayville Location",
-      value: "Bayville, NJ",
+      label: "Address",
+      value: "16 Anchor Square, Toms River, NJ 08753",
     },
     {
       icon: Phone,
-      label: "Bayville Phone",
-      value: "804-585-7301",
-    },
-    {
-      icon: MapPin,
-      label: "Waretown Location", 
-      value: "Waretown, NJ",
-    },
-    {
-      icon: Phone,
-      label: "Waretown Phone",
+      label: "Phone",
       value: "804-585-7301",
     },
     {
@@ -101,6 +91,51 @@ export default function ContactPage() {
       link: "https://oceancountygolfcarts.com",
     },
   ];
+
+  const socialProfiles = [
+    {
+      icon: Youtube,
+      label: "YouTube",
+      value: "@OceanCountyGolfCarts",
+      link: "https://www.youtube.com/@OceanCountyGolfCarts",
+    },
+    {
+      icon: Facebook,
+      label: "Facebook",
+      value: "OceanCountyGolfCarts",
+      link: "https://www.facebook.com/OceanCountyGolfCarts",
+    },
+  ];
+
+  const businessAttributes = {
+    business: ["Small business"],
+    accessibility: [
+      "No wheelchair accessible seating",
+      "Does not have assistive hearing loop", 
+      "No wheelchair accessible restroom"
+    ],
+    amenities: ["No gender-neutral restroom", "Paid Wi-Fi"],
+    crowd: ["Transgender safespace", "LGBTQ+ friendly"],
+    parking: [
+      "No free street parking",
+      "No free parking lot",
+      "No paid parking lot",
+      "No paid street parking",
+      "No paid parking garage",
+      "No on-site parking",
+      "No free parking garage"
+    ],
+    payments: ["Accepts credit cards", "Accepts debit cards", "Not cash-only"],
+    planning: ["Appointment required"],
+    recycling: ["No electronics recycling"],
+    services: [
+      "No in-store pickup for online orders",
+      "Onsite services not available",
+      "Offers delivery",
+      "No in-store shopping",
+      "No curbside pickup"
+    ]
+  };
 
   const businessHours = [
     { day: "Monday - Friday", hours: "9:00 AM - 5:00 PM" },
@@ -170,6 +205,100 @@ export default function ContactPage() {
                     <span className="font-medium">{schedule.hours}</span>
                   </div>
                 ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Social Media</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {socialProfiles.map((profile, index) => {
+                  const Icon = profile.icon;
+                  return (
+                    <div key={index} className="flex items-center">
+                      <Icon className="w-5 h-5 text-ocean-blue mr-3 flex-shrink-0" />
+                      <div>
+                        <div className="text-sm text-gray-500">{profile.label}</div>
+                        <a
+                          href={profile.link}
+                          className="text-ocean-blue hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {profile.value}
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Business Information</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Business Type</h4>
+                  <div className="flex items-center">
+                    <Users className="w-4 h-4 text-blue-600 mr-2" />
+                    <span className="text-gray-600">Small business</span>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Payments</h4>
+                  <div className="space-y-1">
+                    {businessAttributes.payments.map((payment, index) => (
+                      <div key={index} className="flex items-center">
+                        <CreditCard className="w-4 h-4 text-green-600 mr-2" />
+                        <span className="text-gray-600 text-sm">{payment}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Service Options</h4>
+                  <div className="space-y-1">
+                    {businessAttributes.services.map((service, index) => (
+                      <div key={index} className="flex items-center">
+                        <Car className="w-4 h-4 text-blue-600 mr-2" />
+                        <span className="text-gray-600 text-sm">{service}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Accessibility & Amenities</h4>
+                  <div className="space-y-1">
+                    {[...businessAttributes.accessibility, ...businessAttributes.amenities].map((item, index) => (
+                      <div key={index} className="flex items-center">
+                        <Shield className="w-4 h-4 text-gray-500 mr-2" />
+                        <span className="text-gray-600 text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-2">Community</h4>
+                  <div className="space-y-1">
+                    {businessAttributes.crowd.map((crowd, index) => (
+                      <div key={index} className="flex items-center">
+                        <Users className="w-4 h-4 text-purple-600 mr-2" />
+                        <span className="text-gray-600 text-sm">{crowd}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
