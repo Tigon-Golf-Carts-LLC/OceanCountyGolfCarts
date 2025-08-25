@@ -100,12 +100,19 @@ This email was sent from the Ocean County Golf Carts contact form.
 Respond directly to this email to contact the customer.
     `;
 
+    // Send to all three email addresses
+    const recipients = [
+      'info@oceancountygolfcarts.com',
+      'sales@tigongolfcarts.com',
+      'tigongolfcarts@gmail.com'
+    ];
+
     // Email options
     const mailOptions = {
       from: `"Ocean County Golf Carts Contact Form" <${process.env.EMAIL_USER || 'oceancountygolfcarts@gmail.com'}>`,
-      to: 'sales@tigongolfcarts.com',
+      to: recipients.join(', '), // Send to all three emails
       replyTo: formData.email, // Set reply-to as the customer's email
-      subject: `[ OCEAN COUNTY GOLF CARTS ] New Inquiry`,
+      subject: `[ OCEAN COUNTY GOLF CARTS ] New ${interestLabel}`,
       text: textContent,
       html: htmlContent,
     };
@@ -121,8 +128,8 @@ Respond directly to this email to contact the customer.
       });
       
       // For development, we'll just log the email content and return success
-      console.log('Email would be sent to: sales@tigongolfcarts.com');
-      console.log('Email subject:', `[ OCEAN COUNTY GOLF CARTS ] New Inquiry`);
+      console.log('Email would be sent to:', recipients.join(', '));
+      console.log('Email subject:', `[ OCEAN COUNTY GOLF CARTS ] New ${interestLabel}`);
       console.log('Email content:', textContent);
       return true;
     }
