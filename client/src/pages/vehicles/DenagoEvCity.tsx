@@ -10,9 +10,10 @@ export default function DenagoEvCity() {
   return (
     <>
       <SEOHead 
-        title="DENAGO® EV CITY - Urban Electric Vehicle | Ocean County Golf Carts"
-        description="Discover the EV CITY lineup and its unique features designed for urban mobility. Street-legal NEV perfect for city transportation and neighborhood use."
+        title="DENAGO® EV CITY"
+        description="Discover the EV CITY with features designed for urban mobility and neighborhood transportation. Call 1-844-844-6638."
         keywords="DENAGO EV CITY, street legal electric vehicle, NEV, urban mobility, DENAGO dealer Ocean County"
+        ogImage="/attached_assets/DENAGONEVCITY_1751893047472_1753135231313.jpg"
       />
       
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

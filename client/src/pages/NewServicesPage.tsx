@@ -41,8 +41,9 @@ export default function NewServicesPage() {
   return (
     <>
       <SEOHead 
-        title="Golf Cart Services & Repair | Ocean County Golf Carts"
-        description="Professional golf cart services including maintenance, repair, battery service, and custom modifications. Serving Ocean County, NJ with certified technicians."
+        title="Golf Cart Services & Repair"
+        description="Professional golf cart services including maintenance, repair, and custom modifications in Ocean County, NJ. Call 1-844-844-6638."
+        ogImage="/attached_assets/Ocean County New Jersey Golf Carts (3)_1756131126750.png"
         keywords="golf cart service, golf cart repair, battery replacement, maintenance, Ocean County"
       />
       

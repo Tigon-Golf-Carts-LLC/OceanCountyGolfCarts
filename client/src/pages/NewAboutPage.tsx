@@ -60,9 +60,10 @@ export default function NewAboutPage() {
   return (
     <>
       <SEOHead 
-        title="About Ocean County Golf Carts - Your Premier Golf Cart Dealer"
-        description="Learn about Ocean County Golf Carts, New Jersey's trusted golf cart dealer serving all 33 municipalities with premium DENAGO and EVOLUTION vehicles since 2010."
+        title="About Ocean County Golf Carts"
+        description="Learn about Ocean County Golf Carts, New Jersey's trusted dealer serving all 33 municipalities since 2010. Call 1-844-844-6638."
         keywords="Ocean County golf carts, about us, golf cart dealer New Jersey, DENAGO dealer, EVOLUTION dealer"
+        ogImage="/attached_assets/Ocean County New Jersey Golf Carts (1)_1756131126751.png"
       />
       
       <div className="min-h-screen bg-gray-50">

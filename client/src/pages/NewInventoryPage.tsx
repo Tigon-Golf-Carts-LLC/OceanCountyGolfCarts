@@ -46,9 +46,10 @@ export default function NewInventoryPage() {
   return (
     <>
       <SEOHead 
-        title="Golf Cart Inventory - New & Used | Ocean County Golf Carts"
-        description="Browse our extensive inventory of new and used golf carts from top brands like DENAGO and EVOLUTION. Find the perfect electric vehicle for your needs in Ocean County, NJ."
+        title="Golf Cart Inventory"
+        description="Browse our extensive inventory of new and used golf carts from DENAGO and EVOLUTION brands. Call 1-844-844-6638."
         keywords="golf cart inventory, new golf carts, used golf carts, DENAGO, EVOLUTION, Ocean County golf carts"
+        ogImage="/attached_assets/Ocean County New Jersey Golf Carts_1756131126751.png"
       />
       
       <div className="min-h-screen bg-gray-50">

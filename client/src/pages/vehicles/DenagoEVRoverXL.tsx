@@ -10,9 +10,10 @@ export default function DenagoEVRoverXL() {
   return (
     <>
       <SEOHead 
-        title="DENAGO® EV ROVER XL - Premium Electric Golf Cart | Ocean County Golf Carts"
-        description="Discover the DENAGO® EV ROVER XL - Ultimate in electric vehicle performance with advanced capabilities and premium features. Available at Ocean County Golf Carts."
+        title="DENAGO® EV ROVER XL"
+        description="Discover the DENAGO® EV ROVER XL with ultimate electric performance and premium features. Call 1-844-844-6638."
         keywords="DENAGO EV ROVER XL, electric golf cart, premium electric vehicle, DENAGO dealer Ocean County"
+        ogImage="/attached_assets/DENAGONEVROVERXL_1751893047473_1753135231313.jpg"
       />
       
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
