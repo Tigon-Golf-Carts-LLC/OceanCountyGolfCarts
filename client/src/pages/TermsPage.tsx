@@ -4,8 +4,8 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead 
-        title="Terms of Service - Ocean County Golf Carts"
-        description="Read the terms and conditions for using Ocean County Golf Carts services. Understand your rights and responsibilities when purchasing or renting golf carts."
+        title="Terms of Service"
+        description="Read the terms and conditions for using Ocean County Golf Carts services and understand your rights. Call 1-844-844-6638."
         keywords="terms of service, terms and conditions, Ocean County Golf Carts, golf cart sales, rental agreement"
         canonicalUrl="https://oceancountygolfcarts.com/terms"
       />

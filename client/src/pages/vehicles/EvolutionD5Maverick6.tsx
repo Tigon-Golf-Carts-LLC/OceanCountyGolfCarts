@@ -10,9 +10,10 @@ export default function EvolutionD5Maverick6() {
   return (
     <>
       <SEOHead 
-        title="EVOLUTION® D5 Maverick 6 - Family Golf Cart | Ocean County Golf Carts"
-        description="Discover the EVOLUTION® D5 Maverick 6 perfect for family outings. Reliable 6-passenger golf cart for group transportation with proven performance."
+        title="EVOLUTION® D5 Maverick 6"
+        description="Discover the EVOLUTION® D5 Maverick 6 perfect for family outings with reliable 6-passenger seating. Call 1-844-844-6638."
         keywords="EVOLUTION D5 Maverick 6, 6-passenger golf cart, family golf cart, group transportation, EVOLUTION dealer Ocean County"
+        ogImage="/attached_assets/EVOLUTIOND5MAVERICK6_1751893115781_1753135350621.jpg"
       />
       
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

@@ -10,9 +10,10 @@ export default function EvolutionD5Ranger6Plus() {
   return (
     <>
       <SEOHead 
-        title="EVOLUTION® D5 RANGER 6 PLUS - Premium Electric Golf Cart | Ocean County Golf Carts"
-        description="Discover the EVOLUTION® D5 RANGER 6 PLUS - Ultimate in electric vehicle performance with advanced capabilities and premium features. Available at Ocean County Golf Carts."
+        title="EVOLUTION® D5 RANGER 6 PLUS"
+        description="Discover the EVOLUTION® D5 RANGER 6 PLUS with ultimate electric performance and premium 6-passenger seating. Call 1-844-844-6638."
         keywords="EVOLUTION D5 RANGER 6 PLUS, electric golf cart, premium electric vehicle, EVOLUTION dealer Ocean County"
+        ogImage="/attached_assets/EVOLUTIOND5RANGER6PLUS_1751893159004_1753135350619.jpg"
       />
       
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">

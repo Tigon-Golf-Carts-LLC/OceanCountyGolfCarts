@@ -4,8 +4,8 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEOHead 
-        title="Privacy Policy - Ocean County Golf Carts"
-        description="Learn about how Ocean County Golf Carts protects your privacy and handles your personal information. Our commitment to data security and transparency."
+        title="Privacy Policy"
+        description="Learn how Ocean County Golf Carts protects your privacy and handles your personal information securely. Call 1-844-844-6638."
         keywords="privacy policy, data protection, Ocean County Golf Carts, personal information, data security"
         canonicalUrl="https://oceancountygolfcarts.com/privacy"
       />
