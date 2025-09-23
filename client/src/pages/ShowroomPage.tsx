@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Clock, Star, Facebook, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 
 export default function ShowroomPage() {
   const locations = [
@@ -32,6 +33,13 @@ export default function ShowroomPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead 
+        title="Golf Cart Showroom"
+        description="Visit our TIGON Golf Cart showrooms in Bayville and Waretown, NJ for DENAGO and EVOLUTION vehicles. Call 1-844-844-6638."
+        keywords="golf cart showroom, TIGON Golf Carts, Bayville NJ, Waretown NJ, Ocean County showroom"
+        canonicalUrl="https://oceancountygolfcarts.com/showroom"
+        ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
+      />
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto text-center">

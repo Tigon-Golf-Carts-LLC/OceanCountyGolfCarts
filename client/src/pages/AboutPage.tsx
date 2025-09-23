@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Award, MapPin, Clock, Heart, Target, Facebook, Youtube, CreditCard, Wifi, Shield } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 
 export default function AboutPage() {
@@ -36,6 +37,13 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead 
+        title="About Ocean County Golf Carts"
+        description="Ocean County's premier golf cart dealership since 2010, offering DENAGO and EVOLUTION vehicles with exceptional service. Call 1-844-844-6638."
+        keywords="Ocean County Golf Carts, about us, golf cart dealer, New Jersey"
+        canonicalUrl="https://oceancountygolfcarts.com/about"
+        ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
+      />
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto text-center">

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Vehicle } from "@shared/schema";
+import SEOHead from "@/components/SEOHead";
 import evolutionD5Ranger6Image from "@assets/EVOLUTIOND5RANGER6_1751893159004_1753135350623.jpg";
 import evolutionD5Ranger4PlusImage from "@assets/EVOLUTIOND5RANGER4PLUS_1751893115782_1753135350622.jpg";
 import evolutionForester4PlusImage from "@assets/EVOLUTIONFORESTER4PLUS_1751893159005_1753135437836.jpg";
@@ -72,6 +73,13 @@ export default function EvolutionPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <SEOHead 
+        title="EVOLUTION Golf Carts"
+        description="Explore EVOLUTION Golf Carts featuring Ranger, Forester, and Turfman series with premium LED lighting. Call 1-844-844-6638."
+        keywords="EVOLUTION golf carts, Ranger series, Forester series, Turfman series, electric vehicles"
+        canonicalUrl="https://oceancountygolfcarts.com/brands/evolution"
+        ogImage="/attached_assets/EVOLUTIOND5RANGER6_1751893159004_1753135350623.jpg"
+      />
       {/* Brand Hero */}
       <div 
         className="relative bg-cover bg-center h-64 md:h-80 rounded-xl mb-8"

@@ -198,7 +198,7 @@ export default function RentalsPage() {
     <>
       <SEOHead 
         title="Golf Cart Rentals - Ocean County Golf Carts"
-        description="Rent premium golf carts in Ocean County, NJ. Daily, weekly, and monthly rental options available with full insurance and delivery service."
+        description="Rent premium golf carts in Ocean County, NJ with daily, weekly, and monthly options starting at $245/day. Call 1-844-844-6638."
         keywords="golf cart rental, Ocean County rentals, golf cart hire, New Jersey golf cart rental"
       />
       

@@ -6,6 +6,7 @@ import VehicleCard from "@/components/VehicleCard";
 import VehicleFilters from "@/components/VehicleFilters";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Vehicle } from "@shared/schema";
+import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { 
   generateBreadcrumbSchema,
   generateOfferCatalogSchema
@@ -51,6 +52,13 @@ export default function InventoryPage() {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Golf Cart Inventory"
+        description="Browse premium DENAGO and EVOLUTION electric golf carts in Ocean County, NJ. Find your perfect vehicle today. Call 1-844-844-6638."
+        keywords="golf cart inventory, DENAGO golf carts, EVOLUTION golf carts, electric vehicles, Ocean County"
+        canonicalUrl="https://oceancountygolfcarts.com/inventory"
+        ogImage="/attached_assets/a-photograph-of-a-bright-and-airy-modern_cSGtJe7oTWCsurFpyhqrJg_CXQ9jYUGRP2_wh-uk2Htkg_1753199147926.png"
+      />
       {/* Schema Markup */}
       <SchemaMarkup schema={generateBreadcrumbSchema(breadcrumbItems)} />
       {vehicles && <SchemaMarkup schema={generateOfferCatalogSchema(vehicles)} />}

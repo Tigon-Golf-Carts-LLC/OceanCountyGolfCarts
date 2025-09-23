@@ -9,7 +9,7 @@ export default function ThankYouPage() {
     <div className="min-h-screen bg-gray-50">
       <SEOHead 
         title="Thank You - Ocean County Golf Carts"
-        description="Thank you for contacting Ocean County Golf Carts. We'll respond to your inquiry within 24 hours."
+        description="Thank you for contacting Ocean County Golf Carts. We'll respond to your inquiry within 24 hours. Call 1-844-844-6638."
         keywords="thank you, contact confirmation, Ocean County Golf Carts"
       />
       

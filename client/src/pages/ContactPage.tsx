@@ -12,6 +12,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Globe, Clock, Facebook, Youtube, CreditCard, Wifi, Users, Car, Shield } from "lucide-react";
 import { contactFormSchema, ContactForm } from "@shared/schema";
+import SEOHead from "@/components/SEOHead";
 
 export default function ContactPage() {
   const { toast } = useToast();
@@ -145,6 +146,12 @@ export default function ContactPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <SEOHead 
+        title="Contact Ocean County Golf Carts"
+        description="Get in touch with Ocean County Golf Carts for sales, service, and support at our Toms River location. Call 1-844-844-6638."
+        keywords="contact golf carts, Ocean County contact, Toms River golf carts, golf cart dealer"
+        canonicalUrl="https://oceancountygolfcarts.com/contact"
+      />
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Contact Ocean County Golf Carts

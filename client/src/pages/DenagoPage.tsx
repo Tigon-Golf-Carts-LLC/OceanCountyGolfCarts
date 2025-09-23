@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 export default function DenagoPage() {
   const features = [
@@ -13,6 +14,13 @@ export default function DenagoPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <SEOHead 
+        title="DENAGO"
+        description="Premium DENAGO recreational vehicles with advanced suspension systems and high-performance electric motors. Call 1-844-844-6638."
+        keywords="DENAGO golf carts, premium recreational vehicles, electric vehicles, Ocean County"
+        canonicalUrl="https://oceancountygolfcarts.com/brands/denago"
+        ogImage="https://pixabay.com/get/g2710ff58f7ab50725c0d101c0fcdfb7325183aedf06d94408c107ce4e8347053f40265e8288a3384c4f39deb14c0b7525de8e49901f584f95ec44a2bde1953de_1280.jpg"
+      />
       {/* Brand Hero */}
       <div 
         className="relative bg-cover bg-center h-64 md:h-80 rounded-xl mb-8"

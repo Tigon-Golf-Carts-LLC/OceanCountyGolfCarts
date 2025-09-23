@@ -6,6 +6,9 @@ interface SEOHeadProps {
   keywords?: string;
   canonicalUrl?: string;
   townName?: string;
+  ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
 }
 
 export default function SEOHead({ 
@@ -13,7 +16,10 @@ export default function SEOHead({
   description, 
   keywords = "golf carts, Ocean County, electric golf carts, golf cart sales, golf cart service", 
   canonicalUrl,
-  townName 
+  townName,
+  ogImage = "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png",
+  ogImageWidth = 1200,
+  ogImageHeight = 630
 }: SEOHeadProps) {
   useEffect(() => {
     // Set page title
@@ -96,6 +102,9 @@ export default function SEOHead({
     if (canonicalUrl) {
       updateOGTag("og:url", canonicalUrl);
     }
+    updateOGTag("og:image", ogImage);
+    updateOGTag("og:image:width", String(ogImageWidth));
+    updateOGTag("og:image:height", String(ogImageHeight));
     
     // Twitter Card tags
     const updateTwitterTag = (name: string, content: string) => {
@@ -113,6 +122,7 @@ export default function SEOHead({
     updateTwitterTag("twitter:card", "summary_large_image");
     updateTwitterTag("twitter:title", title);
     updateTwitterTag("twitter:description", description);
+    updateTwitterTag("twitter:image", ogImage);
     
     // Structured Data (JSON-LD)
     if (townName) {
@@ -179,7 +189,7 @@ export default function SEOHead({
         document.head.appendChild(script);
       }
     }
-  }, [title, description, keywords, canonicalUrl, townName]);
+  }, [title, description, keywords, canonicalUrl, townName, ogImage, ogImageWidth, ogImageHeight]);
 
   return null;
 }

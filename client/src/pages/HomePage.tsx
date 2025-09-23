@@ -7,6 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import type { Vehicle } from "@shared/schema";
 import InventorySection from "@/components/InventorySection";
 import BrandsSection from "@/components/BrandsSection";
+import SEOHead from "@/components/SEOHead";
 import SchemaMarkup, { 
   generateOrganizationSchema, 
   generateLocalBusinessSchema, 
@@ -25,6 +26,13 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Ocean County Golf Carts Premier Dealership"
+        description="Discover premium Evolution and Denago electric golf carts with professional service in Ocean County, NJ. Call 1-844-844-6638."
+        keywords="golf carts Ocean County, Evolution golf carts, Denago electric carts, New Jersey golf cart dealer"
+        canonicalUrl="https://oceancountygolfcarts.com/"
+        ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
+      />
       {/* Schema Markup */}
       <SchemaMarkup schema={generateOrganizationSchema()} />
       <SchemaMarkup schema={generateLocalBusinessSchema()} />
