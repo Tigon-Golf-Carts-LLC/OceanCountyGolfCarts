@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
@@ -108,7 +109,7 @@ export default function InventorySection() {
         </div>
 
         <div className="text-center">
-          <Link href="/inventory">
+          <Link href={`${BASE_URL}/inventory`}>
             <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
               View All Inventory
               <ArrowRight className="ml-2 h-5 w-5" />

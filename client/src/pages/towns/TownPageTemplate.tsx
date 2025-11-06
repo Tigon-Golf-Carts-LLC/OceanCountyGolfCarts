@@ -1,3 +1,4 @@
+import { BASE_URL } from "@/config/urls";
 import TownPage from "@/components/TownPage";
 
 // Template function to create town-specific pages

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -95,7 +96,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
         townName={fullTownName}
       />
       {/* SEO Optimized Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
+      <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('${BASE_URL}/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -107,7 +108,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
                 Serving {townName} residents with premium DENAGO and EVOLUTION electric golf carts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/inventory" className="w-full sm:w-auto">
+                <Link href={`${BASE_URL}/inventory`} className="w-full sm:w-auto">
                   <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white w-full sm:w-auto">
                     Shop Golf Carts
                   </Button>
@@ -119,7 +120,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
             </div>
             <div className="relative">
               <img 
-                src="/attached_assets/D6-XT6-4wd-color-PORTIMAO-BLUE_1753135231312.png" 
+                src={`${BASE_URL}/attached_assets/D6-XT6-4wd-color-PORTIMAO-BLUE_1753135231312.png`} 
                 alt={`Golf Cart ${townName}`}
                 className="w-full h-auto max-w-lg mx-auto"
               />
@@ -291,7 +292,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
             ))}
           </div>
 
-          <Link href="/inventory">
+          <Link href={`${BASE_URL}/inventory`}>
             <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
               View All Golf Carts
             </Button>
