@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -40,7 +41,7 @@ export default function HomePage() {
       <SchemaMarkup schema={generateServiceSchema()} />
       {vehicles && <SchemaMarkup schema={generateOfferCatalogSchema(vehicles)} />}
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-theme-primary via-blue-800 to-theme-primary text-white py-20 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(59, 130, 246, 0.8), rgba(14, 46, 85, 0.8)), url('/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
+      <section className="relative bg-gradient-to-br from-theme-primary via-blue-800 to-theme-primary text-white py-20 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(59, 130, 246, 0.8), rgba(14, 46, 85, 0.8)), url('${BASE_URL}/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -52,7 +53,7 @@ Ocean County Golf Carts Premier Dealership
                 Serving Ocean County, and all surrounding towns, beach towns, and New Jersey Islands In Ocean County.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/inventory" className="w-full sm:w-auto">
+                <Link href={`${BASE_URL}/inventory`} className="w-full sm:w-auto">
                   <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white w-full sm:w-auto">
                     View Inventory
                   </Button>
@@ -64,7 +65,7 @@ Ocean County Golf Carts Premier Dealership
             </div>
             <div className="relative">
               <img 
-                src="/attached_assets/D6-XT6-4wd-color-PORTIMAO-BLUE_1753135231312.png" 
+                src={`${BASE_URL}/attached_assets/D6-XT6-4wd-color-PORTIMAO-BLUE_1753135231312.png`} 
                 alt="Golf Cart" 
                 className="w-full h-auto max-w-lg mx-auto"
               />
@@ -205,7 +206,7 @@ Ocean County Golf Carts Premier Dealership
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-gray-200 relative overflow-hidden">
                 <img 
-                  src="/attached_assets/EVOLUTIOND5MAVERICK4PLUS_1751893115781_1753135350621.jpg" 
+                  src={`${BASE_URL}/attached_assets/EVOLUTIOND5MAVERICK4PLUS_1751893115781_1753135350621.jpg`} 
                   alt="Evolution D5 Maverick 4 Plus"
                   className="w-full h-full object-cover"
                 />
@@ -224,7 +225,7 @@ Ocean County Golf Carts Premier Dealership
                   <span className="text-2xl font-bold text-blue-600">
                     $12,995
                   </span>
-                  <Link href="/vehicles/evolution-d5-maverick-4-plus">
+                  <Link href={`${BASE_URL}/vehicles/evolution-d5-maverick-4-plus`}>
                     <Button size="sm" className="bg-theme-orange hover:bg-orange-600 text-white px-4 py-2">
                       View Details
                     </Button>
@@ -237,7 +238,7 @@ Ocean County Golf Carts Premier Dealership
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-gray-200 relative overflow-hidden">
                 <img 
-                  src="/attached_assets/EVOLUTIOND6MAXGT4_1751893159004_1753135350620.jpg" 
+                  src={`${BASE_URL}/attached_assets/EVOLUTIOND6MAXGT4_1751893159004_1753135350620.jpg`} 
                   alt="Evolution D6 Max GT4"
                   className="w-full h-full object-cover"
                 />
@@ -256,7 +257,7 @@ Ocean County Golf Carts Premier Dealership
                   <span className="text-2xl font-bold text-blue-600">
                     $16,995
                   </span>
-                  <Link href="/vehicles/evolution-d6-max-gt4">
+                  <Link href={`${BASE_URL}/vehicles/evolution-d6-max-gt4`}>
                     <Button size="sm" className="bg-theme-orange hover:bg-orange-600 text-white px-4 py-2">
                       View Details
                     </Button>
@@ -269,7 +270,7 @@ Ocean County Golf Carts Premier Dealership
             <Card className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video bg-gray-200 relative overflow-hidden">
                 <img 
-                  src="/attached_assets/DENAGONEVCITY_1751893047472_1753135231313.jpg" 
+                  src={`${BASE_URL}/attached_assets/DENAGONEVCITY_1751893047472_1753135231313.jpg`} 
                   alt="Denago EV City"
                   className="w-full h-full object-cover"
                 />
@@ -288,7 +289,7 @@ Ocean County Golf Carts Premier Dealership
                   <span className="text-2xl font-bold text-blue-600">
                     $11,995
                   </span>
-                  <Link href="/vehicles/denago-ev-city">
+                  <Link href={`${BASE_URL}/vehicles/denago-ev-city`}>
                     <Button size="sm" className="bg-theme-orange hover:bg-orange-600 text-white px-4 py-2">
                       View Details
                     </Button>
@@ -298,7 +299,7 @@ Ocean County Golf Carts Premier Dealership
             </Card>
           </div>
 
-          <Link href="/inventory">
+          <Link href={`${BASE_URL}/inventory`}>
             <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
               View Full Inventory
             </Button>
@@ -363,106 +364,106 @@ Ocean County Golf Carts Premier Dealership
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
-            <Link href="/toms-river-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Toms River Township</div>
             </Link>
-            <Link href="/lakewood-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/lakewood-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Lakewood Township</div>
             </Link>
-            <Link href="/brick-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/brick-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Brick Township</div>
             </Link>
-            <Link href="/jackson-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/jackson-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Jackson Township</div>
             </Link>
-            <Link href="/point-pleasant-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/point-pleasant-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Point Pleasant</div>
             </Link>
-            <Link href="/seaside-heights-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/seaside-heights-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Seaside Heights</div>
             </Link>
-            <Link href="/beach-haven-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/beach-haven-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Beach Haven</div>
             </Link>
-            <Link href="/long-beach-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/long-beach-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Long Beach Township</div>
             </Link>
-            <Link href="/stafford-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/stafford-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Stafford Township</div>
             </Link>
-            <Link href="/barnegat-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/barnegat-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Barnegat Township</div>
             </Link>
-            <Link href="/manchester-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/manchester-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Manchester Township</div>
             </Link>
-            <Link href="/berkeley-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/berkeley-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Berkeley Township</div>
             </Link>
-            <Link href="/dover-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/dover-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Dover Township</div>
             </Link>
-            <Link href="/eagleswood-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/eagleswood-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Eagleswood Township</div>
             </Link>
-            <Link href="/little-egg-harbor-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/little-egg-harbor-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Little Egg Harbor Township</div>
             </Link>
-            <Link href="/ocean-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/ocean-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Ocean Township</div>
             </Link>
-            <Link href="/plumsted-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/plumsted-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Plumsted Township</div>
             </Link>
-            <Link href="/barnegat-light-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/barnegat-light-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Barnegat Light</div>
             </Link>
-            <Link href="/bay-head-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/bay-head-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Bay Head</div>
             </Link>
-            <Link href="/beachwood-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/beachwood-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Beachwood</div>
             </Link>
-            <Link href="/harvey-cedars-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/harvey-cedars-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Harvey Cedars</div>
             </Link>
-            <Link href="/island-heights-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/island-heights-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Island Heights</div>
             </Link>
-            <Link href="/lavallette-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/lavallette-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Lavallette</div>
             </Link>
-            <Link href="/mantoloking-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/mantoloking-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Mantoloking</div>
             </Link>
-            <Link href="/ocean-gate-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/ocean-gate-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Ocean Gate</div>
             </Link>
-            <Link href="/pine-beach-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/pine-beach-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Pine Beach</div>
             </Link>
-            <Link href="/point-pleasant-beach-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/point-pleasant-beach-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Point Pleasant Beach</div>
             </Link>
-            <Link href="/seaside-park-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/seaside-park-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Seaside Park</div>
             </Link>
-            <Link href="/ship-bottom-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/ship-bottom-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Ship Bottom</div>
             </Link>
-            <Link href="/south-toms-river-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/south-toms-river-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">South Toms River</div>
             </Link>
-            <Link href="/surf-city-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/surf-city-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Surf City</div>
             </Link>
-            <Link href="/tuckerton-borough-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/tuckerton-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Tuckerton</div>
             </Link>
-            <Link href="/lacey-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/lacey-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">Lacey Township</div>
             </Link>
-            <Link href="/new-hanover-township-golf-carts" className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
+            <Link href={`${BASE_URL}/new-hanover-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-4 rounded-lg transition-colors">
               <div className="text-sm font-semibold text-blue-700">New Hanover Township</div>
             </Link>
           </div>

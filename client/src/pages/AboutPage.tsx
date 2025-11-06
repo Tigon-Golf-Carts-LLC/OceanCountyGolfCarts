@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BASE_URL } from "@/config/urls";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Award, MapPin, Clock, Heart, Target, Facebook, Youtube, CreditCard, Wifi, Shield } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
@@ -45,7 +46,7 @@ export default function AboutPage() {
         ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
       />
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
+      <section className="relative py-20 px-4 bg-gradient-to-r from-theme-primary to-blue-700 text-white bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(29, 78, 216, 0.8)), url('${BASE_URL}/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">About Ocean County Golf Carts</h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto">

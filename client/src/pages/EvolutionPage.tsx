@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from "@/config/urls";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -214,7 +215,7 @@ export default function EvolutionPage() {
               <p className="text-lg text-gray-600 mb-6">
                 No Evolution vehicles are currently in our inventory. Contact us for availability updates.
               </p>
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                   Contact for Availability
                 </Button>

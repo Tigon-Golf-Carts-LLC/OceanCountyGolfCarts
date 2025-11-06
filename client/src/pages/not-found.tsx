@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { BASE_URL } from "@/config/urls";
 import { AlertCircle } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -24,12 +25,12 @@ export default function NotFound() {
           </p>
           
           <div className="flex gap-4">
-            <Link href="/">
+            <Link href={`${BASE_URL}/`}>
               <Button className="bg-theme-orange hover:bg-orange-600 text-white">
                 Return Home
               </Button>
             </Link>
-            <Link href="/inventory">
+            <Link href={`${BASE_URL}/inventory`}>
               <Button variant="outline">
                 Browse Inventory
               </Button>

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, Phone, Clock, Mail } from "lucide-react";
@@ -116,17 +117,17 @@ export default function ThankYouPage() {
               While You Wait, Explore Our Services
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/inventory">
+              <Link href={`${BASE_URL}/inventory`}>
                 <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white w-full sm:w-auto">
                   Browse Our Inventory
                 </Button>
               </Link>
-              <Link href="/rentals">
+              <Link href={`${BASE_URL}/rentals`}>
                 <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-theme-primary hover:text-white w-full sm:w-auto">
                   View Rental Options
                 </Button>
               </Link>
-              <Link href="/financing">
+              <Link href={`${BASE_URL}/financing`}>
                 <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-theme-primary hover:text-white w-full sm:w-auto">
                   Financing Options
                 </Button>
@@ -134,7 +135,7 @@ export default function ThankYouPage() {
             </div>
             
             <div className="pt-8 border-t border-gray-200">
-              <Link href="/">
+              <Link href={`${BASE_URL}/`}>
                 <Button variant="link" className="text-theme-primary hover:text-blue-700">
                   ← Return to Homepage
                 </Button>

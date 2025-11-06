@@ -1,4 +1,5 @@
 import SEOHead from "@/components/SEOHead";
+import { BASE_URL } from "@/config/urls";
 
 export default function PrivacyPage() {
   return (

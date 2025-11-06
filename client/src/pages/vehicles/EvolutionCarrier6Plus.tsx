@@ -6,6 +6,7 @@ import { ArrowLeft, Zap, Shield, Settings, Award, Phone, MapPin, Clock, Users, B
 import SEOHead from "@/components/SEOHead";
 import vehicleImage from "@assets/EVOLUTIONCARRIER6PLUS_1751893115778_1753135231314.jpg";
 
+import { BASE_URL } from "@/config/urls";
 export default function EvolutionCarrier6Plus() {
   return (
     <>
@@ -21,11 +22,11 @@ export default function EvolutionCarrier6Plus() {
         <nav className="py-4 px-4 bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <a href="/" className="text-theme-primary hover:text-blue-800">Home</a>
+              <a href={`${BASE_URL}/`} className="text-theme-primary hover:text-blue-800">Home</a>
               <span>→</span>
-              <a href="/inventory" className="text-theme-primary hover:text-blue-800">Vehicles</a>
+              <a href={`${BASE_URL}/inventory`} className="text-theme-primary hover:text-blue-800">Vehicles</a>
               <span>→</span>
-              <a href="/evolution" className="text-theme-primary hover:text-blue-800">EVOLUTION</a>
+              <a href={`${BASE_URL}/evolution`} className="text-theme-primary hover:text-blue-800">EVOLUTION</a>
               <span>→</span>
               <span className="text-gray-900">Carrier 6 Plus</span>
             </div>
@@ -71,7 +72,7 @@ export default function EvolutionCarrier6Plus() {
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
+                  <Link href={`${BASE_URL}/contact`}>
                     <Button size="lg" className="w-full sm:w-auto bg-theme-orange hover:bg-orange-600 text-white">
                       Get Quote
                     </Button>
@@ -234,7 +235,7 @@ export default function EvolutionCarrier6Plus() {
               Contact Ocean County Golf Carts today to schedule a test drive or get a personalized quote for your EVOLUTION Carrier 6 Plus.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-theme-primary hover:bg-theme-primary text-white">
                   <Phone className="w-5 h-5 mr-2" />
                   Get Quote Today

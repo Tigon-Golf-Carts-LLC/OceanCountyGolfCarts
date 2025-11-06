@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { BASE_URL, toAssetUrl } from "@/config/urls";
 
 interface SEOHeadProps {
   title: string;
@@ -17,7 +18,7 @@ export default function SEOHead({
   keywords = "golf carts, Ocean County, electric golf carts, golf cart sales, golf cart service", 
   canonicalUrl,
   townName,
-  ogImage = "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png",
+  ogImage = `${BASE_URL}/attached_assets/Ocean County Golf Carts (3)_1753196262875.png`,
   ogImageWidth = 1200,
   ogImageHeight = 630
 }: SEOHeadProps) {
@@ -61,25 +62,26 @@ export default function SEOHead({
     }
     
     // Set favicon
+    const faviconUrl = toAssetUrl("/attached_assets/Ocean County Golf Carts (3)_1753196262875.png");
     const existingFavicon = document.querySelector('link[rel="icon"]');
     if (existingFavicon) {
-      existingFavicon.setAttribute("href", "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png");
+      existingFavicon.setAttribute("href", faviconUrl);
     } else {
       const favicon = document.createElement("link");
       favicon.rel = "icon";
       favicon.type = "image/png";
-      favicon.href = "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png";
+      favicon.href = faviconUrl;
       document.head.appendChild(favicon);
     }
     
     // Set apple touch icon
     const existingAppleIcon = document.querySelector('link[rel="apple-touch-icon"]');
     if (existingAppleIcon) {
-      existingAppleIcon.setAttribute("href", "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png");
+      existingAppleIcon.setAttribute("href", faviconUrl);
     } else {
       const appleIcon = document.createElement("link");
       appleIcon.rel = "apple-touch-icon";
-      appleIcon.href = "/attached_assets/Ocean County Golf Carts (3)_1753196262875.png";
+      appleIcon.href = faviconUrl;
       document.head.appendChild(appleIcon);
     }
     

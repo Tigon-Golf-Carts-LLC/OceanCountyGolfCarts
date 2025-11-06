@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BASE_URL } from "@/config/urls";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -247,7 +248,7 @@ export default function NewInventoryPage() {
               Our team can help you find the perfect golf cart or place a custom order.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                   Contact Our Team
                 </Button>

@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Wrench, Battery, Paintbrush, Shield, Clock, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
@@ -68,7 +69,7 @@ export default function NewServicesPage() {
                 From routine maintenance to major repairs, our certified technicians have you covered.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+                <Link href={`${BASE_URL}/contact`}>
                   <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                     Schedule Service
                   </Button>
@@ -171,7 +172,7 @@ export default function NewServicesPage() {
               Contact us today to schedule your golf cart service or request a quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
                   Schedule Service Online
                 </Button>

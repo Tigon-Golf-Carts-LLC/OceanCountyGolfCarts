@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Users, Award, Target, Heart, Phone, Mail, MapPin, Calendar } from "lucide-react";
@@ -88,12 +89,12 @@ export default function NewAboutPage() {
                 with pride and professionalism.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
+                <Link href={`${BASE_URL}/contact`}>
                   <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                     Contact Our Team
                   </Button>
                 </Link>
-                <Link href="/inventory">
+                <Link href={`${BASE_URL}/inventory`}>
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-ocean-blue">
                     View Our Inventory
                   </Button>
@@ -288,7 +289,7 @@ export default function NewAboutPage() {
               Join thousands of satisfied customers who trust us for their golf cart needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                   Contact Us Today
                 </Button>

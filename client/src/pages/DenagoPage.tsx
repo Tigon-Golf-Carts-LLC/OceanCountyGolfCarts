@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { BASE_URL } from "@/config/urls";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -79,7 +80,7 @@ export default function DenagoPage() {
               and availability updates.
             </p>
             <div className="text-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                   Contact for Availability
                 </Button>

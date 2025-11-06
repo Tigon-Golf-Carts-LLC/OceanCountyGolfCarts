@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { BASE_URL } from "@/config/urls";
 import { useParams, Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -52,7 +53,7 @@ export default function VehicleDetailPage() {
           <p className="text-gray-600 mb-6">
             The vehicle you're looking for doesn't exist or has been removed.
           </p>
-          <Link href="/inventory">
+          <Link href={`${BASE_URL}/inventory`}>
             <Button className="bg-theme-orange hover:bg-orange-600 text-white">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Inventory
@@ -96,7 +97,7 @@ export default function VehicleDetailPage() {
       {/* Schema Markup */}
       <SchemaMarkup schema={generateProductSchema(vehicle)} />
       <SchemaMarkup schema={generateBreadcrumbSchema(breadcrumbItems)} />
-      <Link href="/inventory">
+      <Link href={`${BASE_URL}/inventory`}>
         <Button variant="ghost" className="mb-6 text-ocean-blue hover:text-blue-600">
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Inventory
@@ -142,13 +143,13 @@ export default function VehicleDetailPage() {
 
           {/* Action Buttons */}
           <div className="space-y-3">
-            <Link href="/contact">
+            <Link href={`${BASE_URL}/contact`}>
               <Button size="lg" className="w-full bg-theme-orange hover:bg-orange-600 text-white">
                 <Phone className="w-4 h-4 mr-2" />
                 Schedule Test Drive
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href={`${BASE_URL}/contact`}>
               <Button size="lg" variant="outline" className="w-full border-accent-orange text-accent-orange hover:bg-accent-orange hover:text-white">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Get Financing Quote
@@ -205,13 +206,13 @@ export default function VehicleDetailPage() {
             Contact our sales team to schedule a test drive, discuss financing options, or get more information about this {vehicle.name}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href={`${BASE_URL}/contact`}>
               <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
                 <Phone className="w-4 h-4 mr-2" />
                 Contact Sales Team
               </Button>
             </Link>
-            <Link href="/inventory">
+            <Link href={`${BASE_URL}/inventory`}>
               <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white">
                 View More Vehicles
               </Button>

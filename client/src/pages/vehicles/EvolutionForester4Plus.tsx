@@ -6,6 +6,7 @@ import { ArrowLeft, Zap, Shield, Settings, Award, Phone, MapPin, Clock, Users, B
 import SEOHead from "@/components/SEOHead";
 import foresterImage from "@assets/EVOLUTIONFORESTER4PLUS_1751893159005_1753135437836.jpg";
 
+import { BASE_URL } from "@/config/urls";
 export default function EvolutionForester4Plus() {
   return (
     <>
@@ -21,11 +22,11 @@ export default function EvolutionForester4Plus() {
         <nav className="py-4 px-4 bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-2 text-sm text-gray-600">
-              <a href="/" className="text-theme-primary hover:text-blue-800">Home</a>
+              <a href={`${BASE_URL}/`} className="text-theme-primary hover:text-blue-800">Home</a>
               <span>→</span>
-              <a href="/inventory" className="text-theme-primary hover:text-blue-800">Vehicles</a>
+              <a href={`${BASE_URL}/inventory`} className="text-theme-primary hover:text-blue-800">Vehicles</a>
               <span>→</span>
-              <a href="/evolution" className="text-theme-primary hover:text-blue-800">EVOLUTION</a>
+              <a href={`${BASE_URL}/evolution`} className="text-theme-primary hover:text-blue-800">EVOLUTION</a>
               <span>→</span>
               <span className="text-gray-900">FORESTER 4 PLUS</span>
             </div>
@@ -71,12 +72,12 @@ export default function EvolutionForester4Plus() {
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/contact">
+                  <Link href={`${BASE_URL}/contact`}>
                     <Button size="lg" className="w-full sm:w-auto bg-theme-primary hover:bg-theme-primary text-white">
                       Get Quote
                     </Button>
                   </Link>
-                  <Link href="/contact">
+                  <Link href={`${BASE_URL}/contact`}>
                     <Button size="lg" variant="outline" className="w-full sm:w-auto">
                       Schedule Test Drive
                     </Button>
@@ -245,7 +246,7 @@ export default function EvolutionForester4Plus() {
               Contact Ocean County Golf Carts today for pricing, availability, and to schedule a test drive.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" className="bg-white text-theme-primary hover:bg-gray-100">
                   Contact Us Today
                 </Button>
