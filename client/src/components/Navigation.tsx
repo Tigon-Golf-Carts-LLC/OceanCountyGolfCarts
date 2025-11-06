@@ -3,24 +3,26 @@ import { Link, useLocation } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { BASE_URL } from "@/config/urls";
 
 export default function Navigation() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { path: "/", label: "Home" },
-    { path: "/inventory", label: "Inventory" },
-    { path: "/rentals", label: "Rentals" },
-    { path: "/services", label: "Services" },
-    { path: "/showroom", label: "Showroom" },
-    { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: `${BASE_URL}/`, label: "Home" },
+    { path: `${BASE_URL}/inventory`, label: "Inventory" },
+    { path: `${BASE_URL}/rentals`, label: "Rentals" },
+    { path: `${BASE_URL}/services`, label: "Services" },
+    { path: `${BASE_URL}/showroom`, label: "Showroom" },
+    { path: `${BASE_URL}/about`, label: "About" },
+    { path: `${BASE_URL}/contact`, label: "Contact" },
   ];
 
   const isActive = (path: string) => {
-    if (path === "/") return location === "/";
-    return location.startsWith(path);
+    const relativePath = path.replace(BASE_URL, '');
+    if (relativePath === "/" || relativePath === "") return location === "/";
+    return location.startsWith(relativePath);
   };
 
   return (
@@ -30,12 +32,12 @@ export default function Navigation() {
           <div className="flex items-center space-x-3">
             <div className="rounded-lg">
               <img 
-                src="/attached_assets/Ocean County Golf Carts (3)_1753196262875.png" 
+                src={`${BASE_URL}/attached_assets/Ocean County Golf Carts (3)_1753196262875.png`} 
                 alt="Ocean County Golf Carts Logo" 
                 className="h-16 w-16"
               />
             </div>
-            <Link href="/">
+            <Link href={`${BASE_URL}/`}>
               <div className="cursor-pointer">
                 <div className="text-lg font-bold text-theme-primary">OCEAN COUNTY</div>
                 <div className="text-lg font-bold text-theme-primary -mt-1">GOLF CARTS</div>

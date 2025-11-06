@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { BASE_URL } from "@/config/urls";
 
 export default function Footer() {
   const towns = [
@@ -31,25 +32,25 @@ export default function Footer() {
             {/* Navigation Links */}
             <div>
               <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-600 hover:text-gray-900 text-sm">Home</Link></li>
-                <li><Link href="/inventory" className="text-gray-600 hover:text-gray-900 text-sm">Inventory</Link></li>
-                <li><Link href="/rentals" className="text-gray-600 hover:text-gray-900 text-sm">Rentals</Link></li>
-                <li><Link href="/services" className="text-gray-600 hover:text-gray-900 text-sm">Services</Link></li>
+                <li><Link href={`${BASE_URL}/`} className="text-gray-600 hover:text-gray-900 text-sm">Home</Link></li>
+                <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">Inventory</Link></li>
+                <li><Link href={`${BASE_URL}/rentals`} className="text-gray-600 hover:text-gray-900 text-sm">Rentals</Link></li>
+                <li><Link href={`${BASE_URL}/services`} className="text-gray-600 hover:text-gray-900 text-sm">Services</Link></li>
                 <li><a href="https://tigongolfcarts.com/apply-for-financing/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 text-sm">Financing</a></li>
-                <li><Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm">About</Link></li>
+                <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">About</Link></li>
               </ul>
             </div>
 
             {/* Services - Updated with requested links */}
             <div>
               <ul className="space-y-2">
-                <li><Link href="/inventory" className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
-                <li><Link href="/brands/denago" className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
-                <li><Link href="/brands/evolution" className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
-                <li><Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
-                <li><Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm">CONTACT</Link></li>
-                <li><Link href="/privacy" className="text-gray-600 hover:text-gray-900 text-sm">PRIVACY POLICY</Link></li>
-                <li><Link href="/terms" className="text-gray-600 hover:text-gray-900 text-sm">TERMS OF SERVICE</Link></li>
+                <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
+                <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
+                <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
+                <li><Link href={`${BASE_URL}/contact`} className="text-gray-600 hover:text-gray-900 text-sm">CONTACT</Link></li>
+                <li><Link href={`${BASE_URL}/privacy`} className="text-gray-600 hover:text-gray-900 text-sm">PRIVACY POLICY</Link></li>
+                <li><Link href={`${BASE_URL}/terms`} className="text-gray-600 hover:text-gray-900 text-sm">TERMS OF SERVICE</Link></li>
               </ul>
             </div>
           </div>
@@ -81,25 +82,25 @@ export default function Footer() {
             {/* Navigation Links */}
             <div className="md:col-span-1">
               <ul className="space-y-2">
-                <li><Link href="/" className="text-gray-600 hover:text-gray-900 text-sm">Home</Link></li>
-                <li><Link href="/inventory" className="text-gray-600 hover:text-gray-900 text-sm">Inventory</Link></li>
-                <li><Link href="/rentals" className="text-gray-600 hover:text-gray-900 text-sm">Rentals</Link></li>
-                <li><Link href="/services" className="text-gray-600 hover:text-gray-900 text-sm">Services</Link></li>
+                <li><Link href={`${BASE_URL}/`} className="text-gray-600 hover:text-gray-900 text-sm">Home</Link></li>
+                <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">Inventory</Link></li>
+                <li><Link href={`${BASE_URL}/rentals`} className="text-gray-600 hover:text-gray-900 text-sm">Rentals</Link></li>
+                <li><Link href={`${BASE_URL}/services`} className="text-gray-600 hover:text-gray-900 text-sm">Services</Link></li>
                 <li><a href="https://tigongolfcarts.com/apply-for-financing/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 text-sm">Financing</a></li>
-                <li><Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm">About</Link></li>
+                <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">About</Link></li>
               </ul>
             </div>
 
             {/* Services - Updated with requested links */}
             <div className="md:col-span-1">
               <ul className="space-y-2">
-                <li><Link href="/inventory" className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
-                <li><Link href="/brands/denago" className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
-                <li><Link href="/brands/evolution" className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
-                <li><Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
-                <li><Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm">CONTACT</Link></li>
-                <li><Link href="/privacy" className="text-gray-600 hover:text-gray-900 text-sm">PRIVACY POLICY</Link></li>
-                <li><Link href="/terms" className="text-gray-600 hover:text-gray-900 text-sm">TERMS OF SERVICE</Link></li>
+                <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
+                <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
+                <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
+                <li><Link href={`${BASE_URL}/contact`} className="text-gray-600 hover:text-gray-900 text-sm">CONTACT</Link></li>
+                <li><Link href={`${BASE_URL}/privacy`} className="text-gray-600 hover:text-gray-900 text-sm">PRIVACY POLICY</Link></li>
+                <li><Link href={`${BASE_URL}/terms`} className="text-gray-600 hover:text-gray-900 text-sm">TERMS OF SERVICE</Link></li>
               </ul>
             </div>
 
@@ -125,103 +126,103 @@ export default function Footer() {
             Ocean County Towns We Serve
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-center">
-            <Link href="/barnegat-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/barnegat-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Barnegat Township Golf Carts
             </Link>
-            <Link href="/barnegat-light-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/barnegat-light-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Barnegat Light Golf Carts
             </Link>
-            <Link href="/bay-head-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/bay-head-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Bay Head Golf Carts
             </Link>
-            <Link href="/beach-haven-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/beach-haven-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Beach Haven Golf Carts
             </Link>
-            <Link href="/beachwood-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/beachwood-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Beachwood Golf Carts
             </Link>
-            <Link href="/berkeley-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/berkeley-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Berkeley Township Golf Carts
             </Link>
-            <Link href="/brick-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/brick-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Brick Township Golf Carts
             </Link>
-            <Link href="/eagleswood-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/eagleswood-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Eagleswood Township Golf Carts
             </Link>
-            <Link href="/harvey-cedars-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/harvey-cedars-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Harvey Cedars Golf Carts
             </Link>
-            <Link href="/island-heights-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/island-heights-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Island Heights Golf Carts
             </Link>
-            <Link href="/jackson-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/jackson-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Jackson Township Golf Carts
             </Link>
-            <Link href="/lacey-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/lacey-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Lacey Township Golf Carts
             </Link>
-            <Link href="/lakehurst-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/lakehurst-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Lakehurst Golf Carts
             </Link>
-            <Link href="/lakewood-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/lakewood-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Lakewood Township Golf Carts
             </Link>
-            <Link href="/lavallette-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/lavallette-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Lavallette Golf Carts
             </Link>
-            <Link href="/little-egg-harbor-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/little-egg-harbor-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Little Egg Harbor Golf Carts
             </Link>
-            <Link href="/long-beach-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/long-beach-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Long Beach Township Golf Carts
             </Link>
-            <Link href="/manchester-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/manchester-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Manchester Township Golf Carts
             </Link>
-            <Link href="/mantoloking-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/mantoloking-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Mantoloking Golf Carts
             </Link>
-            <Link href="/ocean-gate-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/ocean-gate-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Ocean Gate Golf Carts
             </Link>
-            <Link href="/ocean-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/ocean-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Ocean Township Golf Carts
             </Link>
-            <Link href="/pine-beach-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/pine-beach-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Pine Beach Golf Carts
             </Link>
-            <Link href="/plumsted-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/plumsted-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Plumsted Township Golf Carts
             </Link>
-            <Link href="/point-pleasant-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/point-pleasant-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Point Pleasant Golf Carts
             </Link>
-            <Link href="/point-pleasant-beach-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/point-pleasant-beach-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Point Pleasant Beach Golf Carts
             </Link>
-            <Link href="/seaside-heights-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/seaside-heights-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Seaside Heights Golf Carts
             </Link>
-            <Link href="/seaside-park-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/seaside-park-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Seaside Park Golf Carts
             </Link>
-            <Link href="/ship-bottom-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/ship-bottom-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Ship Bottom Golf Carts
             </Link>
-            <Link href="/south-toms-river-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/south-toms-river-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               South Toms River Golf Carts
             </Link>
-            <Link href="/stafford-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/stafford-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Stafford Township Golf Carts
             </Link>
-            <Link href="/surf-city-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/surf-city-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Surf City Golf Carts
             </Link>
-            <Link href="/toms-river-township-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Toms River Township Golf Carts
             </Link>
-            <Link href="/tuckerton-borough-golf-carts" className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+            <Link href={`${BASE_URL}/tuckerton-borough-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
               Tuckerton Golf Carts
             </Link>
           </div>
@@ -232,8 +233,8 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-600 text-sm">
               © 2025 Ocean County Golf Carts. All rights reserved. | 
-              <Link href="/privacy" className="hover:text-gray-900 ml-1">Privacy Policy</Link> | 
-              <Link href="/terms" className="hover:text-gray-900 ml-1">Terms of Service</Link>
+              <Link href={`${BASE_URL}/privacy`} className="hover:text-gray-900 ml-1">Privacy Policy</Link> | 
+              <Link href={`${BASE_URL}/terms`} className="hover:text-gray-900 ml-1">Terms of Service</Link>
             </div>
             <div className="text-gray-600 text-sm">
               Ocean County Golf Carts - Serving all Ocean County towns with premium golf carts and exceptional service.
