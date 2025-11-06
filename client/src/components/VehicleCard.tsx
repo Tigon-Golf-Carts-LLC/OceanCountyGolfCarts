@@ -60,7 +60,7 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
           </span>
         </div>
         
-        <Link href={`/vehicle/${vehicle.id}`}>
+        <Link href={`${BASE_URL}/vehicle/${vehicle.id}`}>
           <Button className="w-full bg-theme-orange hover:bg-orange-600 text-white">
             View Details
           </Button>
