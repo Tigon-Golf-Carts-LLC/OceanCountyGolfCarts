@@ -46,9 +46,6 @@ export const ShipBottomPage = createTownPage("Ship Bottom", "Borough");
 export const SouthTomsRiverPage = createTownPage("South Toms River", "Borough");
 export const StaffordTPage = createTownPage("Stafford", "Township");
 export const SurfCityPage = createTownPage("Surf City", "Borough");
-export const TomsRiverTPage = createTownPage("Toms River", "Township", {
-  metaTitle: "Golf Carts for Sale in Toms River, NJ | Buy, Rent & Repair",
-  metaDescription: "Golf carts for sale, rental & repair in Toms River, NJ. New electric & LSV DENAGO and EVOLUTION carts with financing and local delivery. Call 804-585-7301.",
-  heading: "Golf Carts in Toms River, NJ - Sales, Rentals & Repair"
-});
+// Note: Toms River uses a dedicated, sales-focused page (TomsRiverGolfCartsPage)
+// wired directly in App.tsx, so it is intentionally not created from this template.
 export const TuckertonPage = createTownPage("Tuckerton", "Borough");

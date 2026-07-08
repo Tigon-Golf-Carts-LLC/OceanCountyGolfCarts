@@ -233,9 +233,9 @@ export default function RentalsPage() {
   return (
     <>
       <SEOHead
-        title="Golf Cart Rentals in Ocean County, NJ | Daily & Weekly"
-        description="Rent golf carts in Ocean County, NJ — daily, weekly & monthly from $245/day with delivery. 4, 6-seater & utility carts. Call 804-585-7301 to reserve."
-        keywords="golf cart rentals near me, golf cart rental Ocean County, how much to rent a golf cart, weekly golf cart rental NJ, beach golf cart rental"
+        title="Golf Cart Rental NJ | Ocean County Golf Cart Rentals"
+        description="Looking for New Jersey golf cart rentals? Ocean County Golf Carts offers daily & weekly rentals across Ocean County, NJ. Electric carts, easy booking, local delivery."
+        keywords="golf cart rental nj, new jersey golf cart rentals, golf cart rentals near me, golf cart rental Ocean County, how much to rent a golf cart, weekly golf cart rental NJ"
         canonicalUrl="https://oceancountygolfcarts.com/rentals"
       />
       <SchemaMarkup schema={generateLocalBusinessSchema()} />
@@ -252,13 +252,21 @@ export default function RentalsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12 max-w-4xl mx-auto">
               <h1 className="text-4xl font-bold mb-6 text-gray-900">
-                Golf Cart Rentals in Ocean County, NJ
+                Golf Cart Rental in NJ — Ocean County's #1 Provider
               </h1>
               <p className="text-lg text-gray-600 mb-4">
-                Rent a golf cart for the beach, a special event, or your next Ocean County vacation.
-                We offer daily, 3-day, weekly, and monthly rentals on 4-seater, 6-seater, and utility
-                carts starting at just $245/day, with delivery and pickup across every Ocean County town —
-                Toms River, Brick, Point Pleasant, Seaside, Long Beach Island, Barnegat, and more.
+                Need a golf cart rental in NJ for the beach, a wedding, a reunion, or your next shore
+                vacation? Ocean County Golf Carts offers daily, 3-day, weekly, and monthly golf cart
+                rentals on 4-seater, 6-seater, and utility carts, starting at just $245/day. Every New
+                Jersey golf cart rental comes fully charged, insured, and ready to go, with a simple
+                24-hour minimum rental period and delivery available across the region.
+              </p>
+              <p className="text-lg text-gray-600 mb-4">
+                Our golf cart rental NJ delivery area covers all of Ocean County — Toms River, Brick,
+                Point Pleasant, Seaside, Long Beach Island (LBI), Barnegat, Lacey, and Stafford Township.
+                A $6/mile delivery fee applies beyond 10 miles, and a refundable security deposit is
+                collected at pickup. Reserve early during shore season, when golf cart rental in NJ
+                books up fast.
               </p>
               <p className="text-lg text-gray-600">
                 Prefer to own? Explore{" "}
@@ -288,8 +296,19 @@ export default function RentalsPage() {
           </div>
         </section>
 
+        {/* Pricing lead-in */}
+        <section className="pt-16 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">NJ Golf Cart Rental Pricing</h2>
+            <p className="text-gray-600">
+              Transparent daily, 3-day, weekly, and monthly rates on every cart type. The longer you
+              rent, the more you save — up to 60%+ off the daily rate on monthly rentals.
+            </p>
+          </div>
+        </section>
+
         {/* 4 Seater Plans */}
-        <RentalSection 
+        <RentalSection
           title="4 Seater Golf Cart Rental Plans"
           icon={<Users className="w-8 h-8 text-blue-600" />}
           plans={fourSeaterPlans}
@@ -327,11 +346,38 @@ export default function RentalsPage() {
           </div>
         </section>
 
+        {/* NJ Service Area Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+                New Jersey Golf Cart Rentals — Serving Ocean County &amp; Beyond
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                As a local New Jersey golf cart rental provider, we deliver throughout Ocean County and
+                the NJ shore. Demand peaks during shore season, so book your cart early. Choose from
+                electric 4-seater, 6-seater, and utility carts, and reach out for custom or long-term
+                rental arrangements. We deliver New Jersey golf cart rentals to these Ocean County towns:
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center max-w-3xl mx-auto">
+              <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Toms River</Link>
+              <Link href={`${BASE_URL}/brick-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Brick</Link>
+              <Link href={`${BASE_URL}/barnegat-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Barnegat</Link>
+              <Link href={`${BASE_URL}/lacey-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Lacey Township</Link>
+              <Link href={`${BASE_URL}/stafford-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Stafford Township</Link>
+              <Link href={`${BASE_URL}/long-beach-township-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Long Beach (LBI)</Link>
+              <Link href={`${BASE_URL}/point-pleasant-beach-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Point Pleasant Beach</Link>
+              <Link href={`${BASE_URL}/seaside-heights-borough-golf-carts`} className="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-sm font-medium text-blue-700 transition-colors">Seaside Heights</Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-10 text-gray-900 text-center">
-              Golf Cart Rental FAQs
+              Frequently Asked Questions About Golf Cart Rentals in NJ
             </h2>
             <div className="space-y-6">
               {rentalFaqs.map((faq, index) => (

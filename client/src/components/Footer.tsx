@@ -239,7 +239,10 @@ export default function Footer() {
               <Link href={`${BASE_URL}/terms`} className="hover:text-gray-900 ml-1">Terms of Service</Link>
             </div>
             <div className="text-gray-600 text-sm">
-              Ocean County Golf Carts - Serving all Ocean County towns with premium golf carts and exceptional service.
+              <Link href={`${BASE_URL}/`} className="hover:text-gray-900">
+                Ocean County Golf Carts — Authorized NJ Golf Cart Dealership
+              </Link>
+              , serving all Ocean County towns with premium golf carts and exceptional service.
             </div>
           </div>
         </div>

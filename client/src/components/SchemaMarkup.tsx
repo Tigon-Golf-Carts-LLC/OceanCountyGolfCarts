@@ -441,6 +441,86 @@ export const generateSalesLocalBusinessSchema = () => ({
   "brand": ["DENAGO", "EVOLUTION"]
 });
 
+// AutoDealer schema for the homepage (New Jersey dealership signals)
+export const generateAutoDealerSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness"],
+  "@id": "https://oceancountygolfcarts.com/#autodealer",
+  "name": "Ocean County Golf Carts",
+  "description": "Authorized New Jersey golf cart dealership carrying Evolution and Denago electric golf carts, with sales, rentals, and repair across Ocean County, NJ.",
+  "url": "https://oceancountygolfcarts.com",
+  "logo": "https://oceancountygolfcarts.com/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg",
+  "telephone": "804-585-7301",
+  "email": "sales@tigongolfcarts.com",
+  "priceRange": "$$-$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Anchor Square",
+    "addressLocality": "Toms River",
+    "addressRegion": "NJ",
+    "postalCode": "08753",
+    "addressCountry": "US"
+  },
+  "hasMap": "https://www.google.com/maps?q=Ocean+County+Golf+Carts+Toms+River+NJ",
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Ocean County, NJ" },
+    { "@type": "State", "name": "New Jersey" }
+  ],
+  "brand": ["DENAGO", "EVOLUTION"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Golf Cart Sales" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Golf Cart Rentals" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Golf Cart Repair & Service" } }
+  ]
+});
+
+// ItemList schema for the inventory page (list of golf cart models)
+export const generateItemListSchema = (vehicles: any[]) => ({
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "New Jersey Golf Carts for Sale",
+  "description": "Electric golf carts for sale at Ocean County Golf Carts in New Jersey",
+  "numberOfItems": vehicles.length,
+  "itemListElement": vehicles.map((vehicle, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "url": `https://oceancountygolfcarts.com/vehicles/${vehicle.id}`,
+    "name": vehicle.name,
+    "image": vehicle.images?.[0] ? `https://oceancountygolfcarts.com${vehicle.images[0]}` : undefined
+  }))
+});
+
+// LocalBusiness schema scoped to a single town's service area (e.g. Toms River)
+export const generateTownSalesSchema = (townName: string) => ({
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness"],
+  "@id": `https://oceancountygolfcarts.com/${townName.toLowerCase().replace(/\s+/g, '-')}#dealer`,
+  "name": `Ocean County Golf Carts - ${townName}`,
+  "description": `Golf carts for sale, rental, and repair serving ${townName}, NJ. New Evolution and Denago electric and LSV golf carts with local delivery and financing.`,
+  "url": `https://oceancountygolfcarts.com/${townName.toLowerCase().replace(/\s+/g, '-')}-township-golf-carts`,
+  "telephone": "804-585-7301",
+  "priceRange": "$$-$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Anchor Square",
+    "addressLocality": "Toms River",
+    "addressRegion": "NJ",
+    "postalCode": "08753",
+    "addressCountry": "US"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": `${townName}, NJ`,
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "Ocean County"
+    }
+  },
+  "brand": ["DENAGO", "EVOLUTION"]
+});
+
 export const generateTownPageSchema = (townName: string) => ({
   "@context": "https://schema.org",
   "@type": "WebPage",

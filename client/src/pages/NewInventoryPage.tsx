@@ -9,6 +9,10 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Search, Filter, Star, Phone, MapPin, Clock } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, {
+  generateItemListSchema,
+  generateBreadcrumbSchema
+} from "@/components/SchemaMarkup";
 import type { Vehicle } from "@shared/schema";
 import inventoryHeroImage from "@assets/Ocean County New Jersey Golf Carts_1756131126751.png";
 
@@ -46,13 +50,21 @@ export default function NewInventoryPage() {
 
   return (
     <>
-      <SEOHead 
-        title="Golf Cart Inventory"
-        description="Browse our extensive inventory of new and used golf carts from DENAGO and EVOLUTION brands. Call 1-844-844-6638."
-        keywords="golf cart inventory, new golf carts, used golf carts, DENAGO, EVOLUTION, Ocean County golf carts"
+      <SEOHead
+        title="New Jersey Golf Carts for Sale | Browse Our NJ Inventory"
+        description="Shop new & electric golf carts for sale in New Jersey. Ocean County Golf Carts carries Evolution & Denago — financing available. Visit us today!"
+        keywords="new jersey golf carts, new jersey golf carts for sale, NJ golf carts for sale, golf cart inventory, DENAGO, EVOLUTION, Ocean County golf carts"
+        canonicalUrl="https://oceancountygolfcarts.com/inventory"
         ogImage="/attached_assets/Ocean County New Jersey Golf Carts_1756131126751.png"
       />
-      
+      {vehicles && vehicles.length > 0 && (
+        <SchemaMarkup schema={generateItemListSchema(vehicles)} />
+      )}
+      <SchemaMarkup schema={generateBreadcrumbSchema([
+        { name: "Home", url: "https://oceancountygolfcarts.com" },
+        { name: "New Jersey Golf Carts for Sale", url: "https://oceancountygolfcarts.com/inventory" }
+      ])} />
+
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
         <section 
@@ -67,13 +79,44 @@ export default function NewInventoryPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-                Golf Cart Inventory
+                New Jersey Golf Carts for Sale — Shop Our Full Inventory
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-md">
-                Discover our extensive selection of premium golf carts from leading brands. 
-                New arrivals, certified pre-owned, and custom builds available.
+                Browse our complete selection of Evolution and Denago electric golf carts for sale in
+                New Jersey. New arrivals and custom builds available across Ocean County.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* NJ Inventory Intro */}
+        <section className="py-12 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-lg text-gray-700 mb-4">
+              Ocean County Golf Carts is your source for <strong>New Jersey golf carts</strong> for sale,
+              serving all of Ocean County and the greater NJ shore. From compact 2-passenger carts to
+              lifted 6-seaters and street-legal LSVs, every cart in our inventory is electric, backed by
+              factory warranties, and available with financing and free local delivery. Whether you're in
+              a beach town, a lake community, or a 55+ neighborhood, we'll help you find the right{" "}
+              <strong>NJ golf carts for sale</strong> for how you ride.
+            </p>
+            <p className="text-lg text-gray-700">
+              Shopping a specific town? Explore{" "}
+              <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                golf carts for sale in Toms River, NJ
+              </Link>
+              , browse{" "}
+              <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-blue-600 underline hover:text-blue-800">
+                electric and LSV golf carts for sale
+              </Link>
+              , or view all{" "}
+              <Link href={`${BASE_URL}/brick-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                Brick
+              </Link>{" "}and{" "}
+              <Link href={`${BASE_URL}/lakewood-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                Lakewood
+              </Link>{" "}township pages.
+            </p>
           </div>
         </section>
 
@@ -235,6 +278,39 @@ export default function NewInventoryPage() {
                 </Button>
               </div>
             )}
+          </div>
+        </section>
+
+        {/* NJ Golf Carts For Sale Content */}
+        <section className="py-16 bg-white border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              New Jersey Golf Carts for Sale — Find Your Perfect Ride
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Buying a golf cart in New Jersey is simple with Ocean County Golf Carts. We carry two of the
+              most trusted brands — Evolution and Denago — in 2, 4, and 6-passenger configurations, plus
+              street-legal LSV models that can be titled, registered, and insured for local NJ roads. Every
+              cart is 100% electric for quiet, low-maintenance driving.
+            </p>
+            <p className="text-lg text-gray-700 mb-6">
+              Not sure where to start? Tell us how you'll use your cart — beach trips, neighborhood
+              cruising, golf, or hauling — and we'll match you to the right model and budget. With 0%
+              financing on select models, factory warranties, genuine parts, and free local delivery
+              across Ocean County, it's easy to drive home the perfect New Jersey golf cart for sale.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="https://tigongolfcarts.com/apply-for-financing/" target="_blank" rel="noopener noreferrer">
+                <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
+                  Apply for Financing
+                </Button>
+              </a>
+              <Link href={`${BASE_URL}/contact`}>
+                <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-blue-50">
+                  Request a Quote
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 

@@ -44,7 +44,15 @@ const salesFaqs = [
 
 export default function GolfCartsForSalePage() {
   const { data: vehicles } = useQuery<Vehicle[]>({
-    queryKey: ["/api/vehicles"],
+    queryKey: ["vehicles"],
+    queryFn: async () => {
+      const response = await fetch('/api/vehicles');
+      if (!response.ok) {
+        throw new Error(`Failed to fetch vehicles: ${response.status}`);
+      }
+      return response.json();
+    },
+    refetchOnWindowFocus: false,
   });
 
   const featuredVehicles = vehicles?.slice(0, 6) || [];

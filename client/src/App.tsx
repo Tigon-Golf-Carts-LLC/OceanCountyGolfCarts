@@ -22,6 +22,7 @@ import NewAboutPage from "@/pages/NewAboutPage";
 import PrivacyPage from "@/pages/PrivacyPage";
 import TermsPage from "@/pages/TermsPage";
 import GolfCartsForSalePage from "@/pages/GolfCartsForSalePage";
+import TomsRiverGolfCartsPage from "@/pages/TomsRiverGolfCartsPage";
 // Vehicle Page Imports
 import EvolutionD5Ranger6Plus from "@/pages/vehicles/EvolutionD5Ranger6Plus";
 import EvolutionD5Ranger22Plus from "@/pages/vehicles/EvolutionD5Ranger22Plus";
@@ -53,7 +54,7 @@ import {
   LittleEggHarborTPage, LongBeachTPage, ManchesterTPage, MantolokingPage,
   OceanGatePage, OceanTPage, PineBeachPage, PlumstedTPage, PointPleasantPage,
   PointPleasantBeachPage, SeasideHeightsPage, SeasideParkPage, ShipBottomPage,
-  SouthTomsRiverPage, StaffordTPage, SurfCityPage, TomsRiverTPage, TuckertonPage
+  SouthTomsRiverPage, StaffordTPage, SurfCityPage, TuckertonPage
 } from "@/pages/towns/TownPageTemplate";
 
 const queryClient = new QueryClient();
@@ -140,7 +141,7 @@ function App() {
             <Route path="/south-toms-river-borough-golf-carts" component={SouthTomsRiverPage} />
             <Route path="/stafford-township-golf-carts" component={StaffordTPage} />
             <Route path="/surf-city-borough-golf-carts" component={SurfCityPage} />
-            <Route path="/toms-river-township-golf-carts" component={TomsRiverTPage} />
+            <Route path="/toms-river-township-golf-carts" component={TomsRiverGolfCartsPage} />
             <Route path="/tuckerton-borough-golf-carts" component={TuckertonPage} />
             
             <Route component={NotFound} />

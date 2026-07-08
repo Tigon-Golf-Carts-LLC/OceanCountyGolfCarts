@@ -393,16 +393,24 @@ export default function TownPage({ townName, townType, metaTitle, metaDescriptio
                 Looking for golf carts for sale in {townName}? Browse our{" "}
                 <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-blue-600 underline hover:text-blue-800">
                   electric and LSV golf cart inventory in Ocean County
-                </Link>
-                , reserve{" "}
+                </Link>{" "}
+                or view our full selection of{" "}
+                <Link href={`${BASE_URL}/inventory`} className="text-blue-600 underline hover:text-blue-800">
+                  New Jersey golf carts
+                </Link>{" "}
+                at our Ocean County dealership.
+              </p>
+
+              <p className="text-lg text-gray-600 mb-6">
+                Prefer to rent? Reserve a{" "}
                 <Link href={`${BASE_URL}/rentals`} className="text-blue-600 underline hover:text-blue-800">
-                  golf cart rentals in Ocean County
+                  golf cart rental in {townName}
                 </Link>
-                , or schedule{" "}
+                . Need repairs? We offer full{" "}
                 <Link href={`${BASE_URL}/services`} className="text-blue-600 underline hover:text-blue-800">
-                  mobile golf cart repair near you
-                </Link>
-                .
+                  golf cart service in {townName}
+                </Link>{" "}
+                and mobile repair throughout Ocean County, NJ.
               </p>
 
               <div className="space-y-4 mb-8">
