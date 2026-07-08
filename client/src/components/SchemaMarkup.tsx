@@ -326,6 +326,121 @@ export const generateContactPageSchema = () => ({
   }
 });
 
+// Shared Ocean County service-area list used across LocalBusiness / Service schema
+export const OCEAN_COUNTY_SERVICE_AREA = [
+  "Toms River", "Lakewood", "Brick", "Jackson", "Point Pleasant",
+  "Point Pleasant Beach", "Seaside Heights", "Seaside Park", "Beach Haven",
+  "Long Beach Township", "Stafford", "Barnegat", "Manchester", "Berkeley",
+  "Lacey", "Little Egg Harbor", "Ocean Gate", "Pine Beach", "Beachwood",
+  "Island Heights", "Lavallette", "Mantoloking", "Bay Head", "Ship Bottom",
+  "Surf City", "Harvey Cedars", "Tuckerton", "Eagleswood", "South Toms River",
+  "Ocean Township", "Plumsted", "Lakehurst", "Barnegat Light"
+];
+
+// FAQPage schema for pages with FAQ sections
+export const generateFAQSchema = (faqs: Array<{ question: string; answer: string }>) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map((faq) => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+});
+
+// Service schema for the golf cart rental offering
+export const generateRentalServiceSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Golf Cart Rental",
+  "name": "Golf Cart Rentals in Ocean County, NJ",
+  "description": "Daily, 3-day, weekly, and monthly golf cart rentals with delivery and pickup throughout Ocean County, New Jersey. Street-legal 4-seater, 6-seater, and utility carts available.",
+  "url": "https://oceancountygolfcarts.com/rentals",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Ocean County Golf Carts",
+    "telephone": "804-585-7301",
+    "url": "https://oceancountygolfcarts.com",
+    "priceRange": "$$"
+  },
+  "areaServed": OCEAN_COUNTY_SERVICE_AREA.map((town) => ({
+    "@type": "City",
+    "name": town
+  })),
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "245",
+    "highPrice": "3500",
+    "offerCount": "12",
+    "url": "https://oceancountygolfcarts.com/rentals"
+  }
+});
+
+// Service schema for the golf cart repair / maintenance offering
+export const generateRepairServiceSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Golf Cart Repair & Maintenance",
+  "name": "Golf Cart Repair & Mobile Service in Ocean County, NJ",
+  "description": "Professional golf cart repair, battery service, custom modifications, and warranty work. Mobile golf cart repair available throughout Ocean County, New Jersey.",
+  "url": "https://oceancountygolfcarts.com/services",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Ocean County Golf Carts",
+    "telephone": "804-585-7301",
+    "url": "https://oceancountygolfcarts.com",
+    "priceRange": "$$"
+  },
+  "areaServed": OCEAN_COUNTY_SERVICE_AREA.map((town) => ({
+    "@type": "City",
+    "name": town
+  })),
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "50",
+    "highPrice": "85",
+    "url": "https://oceancountygolfcarts.com/services"
+  }
+});
+
+// LocalBusiness schema tuned for the golf-carts-for-sale landing page
+export const generateSalesLocalBusinessSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": ["AutoDealer", "LocalBusiness"],
+  "@id": "https://oceancountygolfcarts.com/golf-carts-for-sale#dealer",
+  "name": "Ocean County Golf Carts",
+  "description": "Electric, LSV, and street-legal golf carts for sale in Ocean County, NJ. New DENAGO and EVOLUTION 2, 4, and 6-passenger models with financing available.",
+  "url": "https://oceancountygolfcarts.com/golf-carts-for-sale",
+  "telephone": "804-585-7301",
+  "email": "sales@tigongolfcarts.com",
+  "priceRange": "$$-$$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Cash, Credit Card, Financing",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Anchor Square",
+    "addressLocality": "Toms River",
+    "addressRegion": "NJ",
+    "postalCode": "08753",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.9526,
+    "longitude": -74.1959
+  },
+  "areaServed": OCEAN_COUNTY_SERVICE_AREA.map((town) => ({
+    "@type": "City",
+    "name": town
+  })),
+  "brand": ["DENAGO", "EVOLUTION"]
+});
+
 export const generateTownPageSchema = (townName: string) => ({
   "@context": "https://schema.org",
   "@type": "WebPage",

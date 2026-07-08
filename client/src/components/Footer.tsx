@@ -45,6 +45,7 @@ export default function Footer() {
             <div>
               <ul className="space-y-2">
                 <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-gray-600 hover:text-gray-900 text-sm">GOLF CARTS FOR SALE</Link></li>
                 <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
                 <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
                 <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
@@ -95,6 +96,7 @@ export default function Footer() {
             <div className="md:col-span-1">
               <ul className="space-y-2">
                 <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-gray-600 hover:text-gray-900 text-sm">GOLF CARTS FOR SALE</Link></li>
                 <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
                 <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
                 <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>

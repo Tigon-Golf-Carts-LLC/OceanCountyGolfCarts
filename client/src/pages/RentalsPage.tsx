@@ -1,9 +1,44 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { BASE_URL } from "@/config/urls";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, {
+  generateLocalBusinessSchema,
+  generateRentalServiceSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema
+} from "@/components/SchemaMarkup";
 import { Check, Phone, Users, Car } from "lucide-react";
+
+const rentalFaqs = [
+  {
+    question: "How much does it cost to rent a golf cart in Ocean County?",
+    answer:
+      "Golf cart rentals start at $245 for a 1-day 4-seater rental. Weekly 4-seater rentals are $1,050 (about $150/day) and monthly rentals are $2,800. Six-seater carts start at $295/day and utility carts start at $245/day. Longer rentals unlock the biggest savings — up to 60%+ off the daily rate."
+  },
+  {
+    question: "How much is it to rent a golf cart for a week?",
+    answer:
+      "A weekly 4-seater golf cart rental is $1,050 and a weekly 6-seater is $1,400. Weekly rentals are our most popular option for vacations on Long Beach Island, Seaside, and Point Pleasant Beach."
+  },
+  {
+    question: "Do you deliver rental golf carts?",
+    answer:
+      "Yes. We deliver and pick up rental golf carts throughout Ocean County. A delivery fee of $6/mile applies for locations beyond 10 miles. Every rental arrives fully charged, insured, and ready to go."
+  },
+  {
+    question: "Are your rental golf carts street legal?",
+    answer:
+      "Our rental carts are equipped with seat belts and are suitable for use on roads posted at low speed limits in many Ocean County beach communities. Ask our team about street-legal LSV options when you reserve."
+  },
+  {
+    question: "What areas do you serve for golf cart rentals?",
+    answer:
+      "We rent golf carts across all of Ocean County, including Toms River, Brick, Point Pleasant, Point Pleasant Beach, Seaside Heights, Seaside Park, Beach Haven, Long Beach Township, Barnegat, Stafford, Lavallette, and every surrounding town."
+  }
+];
 
 export default function RentalsPage() {
   const rentalFeatures = [
@@ -197,21 +232,50 @@ export default function RentalsPage() {
 
   return (
     <>
-      <SEOHead 
-        title="Golf Cart Rentals - Ocean County Golf Carts"
-        description="Rent premium golf carts in Ocean County, NJ with daily, weekly, and monthly options starting at $245/day. Call 1-844-844-6638."
-        keywords="golf cart rental, Ocean County rentals, golf cart hire, New Jersey golf cart rental"
+      <SEOHead
+        title="Golf Cart Rentals in Ocean County, NJ | Daily & Weekly"
+        description="Rent golf carts in Ocean County, NJ — daily, weekly & monthly from $245/day with delivery. 4, 6-seater & utility carts. Call 804-585-7301 to reserve."
+        keywords="golf cart rentals near me, golf cart rental Ocean County, how much to rent a golf cart, weekly golf cart rental NJ, beach golf cart rental"
+        canonicalUrl="https://oceancountygolfcarts.com/rentals"
       />
-      
+      <SchemaMarkup schema={generateLocalBusinessSchema()} />
+      <SchemaMarkup schema={generateRentalServiceSchema()} />
+      <SchemaMarkup schema={generateFAQSchema(rentalFaqs)} />
+      <SchemaMarkup schema={generateBreadcrumbSchema([
+        { name: "Home", url: "https://oceancountygolfcarts.com" },
+        { name: "Golf Cart Rentals", url: "https://oceancountygolfcarts.com/rentals" }
+      ])} />
+
       <div className="min-h-screen bg-gray-50">
         {/* Why Choose Our Rentals Section */}
         <section className="py-16 px-4 bg-gray-100">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold mb-8 text-gray-900">
-                Why Choose Our Golf Cart Rentals?
+            <div className="text-center mb-12 max-w-4xl mx-auto">
+              <h1 className="text-4xl font-bold mb-6 text-gray-900">
+                Golf Cart Rentals in Ocean County, NJ
               </h1>
+              <p className="text-lg text-gray-600 mb-4">
+                Rent a golf cart for the beach, a special event, or your next Ocean County vacation.
+                We offer daily, 3-day, weekly, and monthly rentals on 4-seater, 6-seater, and utility
+                carts starting at just $245/day, with delivery and pickup across every Ocean County town —
+                Toms River, Brick, Point Pleasant, Seaside, Long Beach Island, Barnegat, and more.
+              </p>
+              <p className="text-lg text-gray-600">
+                Prefer to own? Explore{" "}
+                <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-blue-600 underline hover:text-blue-800">
+                  golf carts for sale in Ocean County
+                </Link>{" "}
+                or book{" "}
+                <Link href={`${BASE_URL}/services`} className="text-blue-600 underline hover:text-blue-800">
+                  mobile golf cart repair near you
+                </Link>
+                .
+              </p>
             </div>
+
+            <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">
+              Why Choose Our Golf Cart Rentals?
+            </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
               {rentalFeatures.map((feature, index) => (
@@ -260,6 +324,23 @@ export default function RentalsPage() {
             <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
               Call Now 804-585-7301
             </Button>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-10 text-gray-900 text-center">
+              Golf Cart Rental FAQs
+            </h2>
+            <div className="space-y-6">
+              {rentalFaqs.map((faq, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-sm p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

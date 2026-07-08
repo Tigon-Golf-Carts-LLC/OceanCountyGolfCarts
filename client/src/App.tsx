@@ -21,6 +21,7 @@ import NewServicesPage from "@/pages/NewServicesPage";
 import NewAboutPage from "@/pages/NewAboutPage";
 import PrivacyPage from "@/pages/PrivacyPage";
 import TermsPage from "@/pages/TermsPage";
+import GolfCartsForSalePage from "@/pages/GolfCartsForSalePage";
 // Vehicle Page Imports
 import EvolutionD5Ranger6Plus from "@/pages/vehicles/EvolutionD5Ranger6Plus";
 import EvolutionD5Ranger22Plus from "@/pages/vehicles/EvolutionD5Ranger22Plus";
@@ -69,6 +70,7 @@ function App() {
           <Switch>
             <Route path="/" component={HomePage} />
             <Route path="/inventory" component={NewInventoryPage} />
+            <Route path="/golf-carts-for-sale" component={GolfCartsForSalePage} />
             <Route path="/rentals" component={RentalsPage} />
             <Route path="/services" component={NewServicesPage} />
             <Route path="/about" component={NewAboutPage} />

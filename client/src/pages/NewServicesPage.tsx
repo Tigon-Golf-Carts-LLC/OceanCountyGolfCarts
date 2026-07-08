@@ -5,7 +5,41 @@ import { Badge } from "@/components/ui/badge";
 import { Wrench, Battery, Paintbrush, Shield, Clock, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup, {
+  generateLocalBusinessSchema,
+  generateRepairServiceSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema
+} from "@/components/SchemaMarkup";
 import serviceHeroImage from "@assets/Ocean County New Jersey Golf Carts (3)_1756131126750.png";
+
+const serviceFaqs = [
+  {
+    question: "Do you offer mobile golf cart repair near me?",
+    answer:
+      "Yes. We provide on-site, mobile golf cart repair throughout Ocean County for many major repairs and routine maintenance, so you don't have to transport your cart. Call 804-585-7301 to schedule mobile service in your town."
+  },
+  {
+    question: "How much does golf cart repair cost?",
+    answer:
+      "Diagnostic and repair labor starts at $85/hour, and battery services start at $50. Custom modifications are quoted on request. We provide an estimate before any work begins."
+  },
+  {
+    question: "What golf cart brands do you service?",
+    answer:
+      "Our certified technicians service all major golf cart brands, including DENAGO, EVOLUTION, Club Car, EZ-GO, Yamaha, and more — using genuine OEM parts and honoring factory warranties where applicable."
+  },
+  {
+    question: "How long does a typical golf cart repair take?",
+    answer:
+      "Most repairs are completed within 24–48 hours. Emergency service is available for urgent needs. Battery testing and many maintenance items can be handled same-day."
+  },
+  {
+    question: "What areas do you cover for golf cart service?",
+    answer:
+      "We serve every Ocean County community, including Toms River, Brick, Lakewood, Point Pleasant, Seaside, Long Beach Island, Barnegat, Stafford, Manchester, Berkeley, and all surrounding towns."
+  }
+];
 
 export default function NewServicesPage() {
   const services = [
@@ -41,12 +75,20 @@ export default function NewServicesPage() {
 
   return (
     <>
-      <SEOHead 
-        title="Golf Cart Services & Repair"
-        description="Professional golf cart services including maintenance, repair, and custom modifications in Ocean County, NJ. Call 1-844-844-6638."
+      <SEOHead
+        title="Golf Cart Repair & Service in Ocean County, NJ"
+        description="Professional golf cart repair, battery service & mobile maintenance in Ocean County, NJ. Certified techs, all brands, fast turnaround. Call 804-585-7301."
         ogImage="/attached_assets/Ocean County New Jersey Golf Carts (3)_1756131126750.png"
-        keywords="golf cart service, golf cart repair, battery replacement, maintenance, Ocean County"
+        keywords="golf cart repair near me, mobile golf cart repair near me, golf cart service Ocean County, golf cart battery replacement, golf cart maintenance NJ"
+        canonicalUrl="https://oceancountygolfcarts.com/services"
       />
+      <SchemaMarkup schema={generateLocalBusinessSchema()} />
+      <SchemaMarkup schema={generateRepairServiceSchema()} />
+      <SchemaMarkup schema={generateFAQSchema(serviceFaqs)} />
+      <SchemaMarkup schema={generateBreadcrumbSchema([
+        { name: "Home", url: "https://oceancountygolfcarts.com" },
+        { name: "Golf Cart Services", url: "https://oceancountygolfcarts.com/services" }
+      ])} />
       
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
@@ -158,6 +200,47 @@ export default function NewServicesPage() {
                 <h3 className="text-xl font-semibold mb-2">Quality Guarantee</h3>
                 <p className="text-gray-600">All work backed by our comprehensive warranty. We stand behind our repairs and service.</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Area + Internal Links */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Golf Cart Repair Across Ocean County</h2>
+            <p className="text-lg text-gray-600 mb-6">
+              From Toms River and Brick to Point Pleasant, Seaside, Long Beach Island, Barnegat, and
+              Stafford, our mobile golf cart repair team serves every Ocean County community. Certified
+              technicians come to you for battery service, brake and suspension repair, electrical
+              diagnostics, and warranty work.
+            </p>
+            <p className="text-lg text-gray-600">
+              Need a new cart instead of a repair? Shop{" "}
+              <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-green-700 underline hover:text-green-900">
+                golf carts for sale in Ocean County
+              </Link>{" "}
+              or reserve a{" "}
+              <Link href={`${BASE_URL}/rentals`} className="text-green-700 underline hover:text-green-900">
+                golf cart rental
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold mb-10 text-gray-900 text-center">
+              Golf Cart Service &amp; Repair FAQs
+            </h2>
+            <div className="space-y-6">
+              {serviceFaqs.map((faq, index) => (
+                <div key={index} className="border-b border-gray-200 pb-6">
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

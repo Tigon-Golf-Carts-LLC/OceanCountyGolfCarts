@@ -27,10 +27,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      <SEOHead 
-        title="Ocean County Golf Carts Premier Dealership"
-        description="Discover premium Evolution and Denago electric golf carts with professional service in Ocean County, NJ. Call 1-844-844-6638."
-        keywords="golf carts Ocean County, Evolution golf carts, Denago electric carts, New Jersey golf cart dealer"
+      <SEOHead
+        title="Golf Carts for Sale & Rental | Ocean County, NJ"
+        description="Shop electric golf carts, schedule rentals, or book mobile repair across Ocean County, NJ. New DENAGO & EVOLUTION carts. Call 804-585-7301 for a free quote."
+        keywords="golf carts Ocean County, golf carts for sale, golf cart rentals, golf cart repair, Evolution golf carts, Denago electric carts, New Jersey golf cart dealer"
         canonicalUrl="https://oceancountygolfcarts.com/"
         ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
       />
@@ -46,11 +46,25 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-Ocean County Golf Carts Premier Dealership
+                Golf Carts for Sale, Rental &amp; Repair in Ocean County, NJ
               </h1>
               <p className="text-xl mb-8 text-gray-100">
-                Discover our extensive selection of new electric golf carts from Evolution and Denago with professional services. 
+                Discover our extensive selection of new electric golf carts from Evolution and Denago with professional services.
                 Serving Ocean County, and all surrounding towns, beach towns, and New Jersey Islands In Ocean County.
+              </p>
+              <p className="text-lg mb-8 text-gray-100">
+                <Link href={`${BASE_URL}/golf-carts-for-sale`} className="underline font-semibold hover:text-white">
+                  Browse golf carts for sale in Ocean County
+                </Link>
+                , reserve{" "}
+                <Link href={`${BASE_URL}/rentals`} className="underline font-semibold hover:text-white">
+                  golf cart rentals
+                </Link>
+                , or book{" "}
+                <Link href={`${BASE_URL}/services`} className="underline font-semibold hover:text-white">
+                  mobile golf cart repair near you
+                </Link>
+                .
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href={`${BASE_URL}/inventory`} className="w-full sm:w-auto">
