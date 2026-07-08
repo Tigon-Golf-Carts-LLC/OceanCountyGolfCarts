@@ -7,14 +7,18 @@ import { Star, Wrench, Percent, Leaf, CheckCircle, MapPin, Phone, Clock, Users }
 import { useQuery } from "@tanstack/react-query";
 import type { Vehicle } from "@shared/schema";
 import SEOHead from "@/components/SEOHead";
-import SchemaMarkup, { 
+import SchemaMarkup, {
   generateLocalBusinessSchema,
-  generateBreadcrumbSchema
+  generateBreadcrumbSchema,
+  generateServiceSchema
 } from "@/components/SchemaMarkup";
 
 interface TownPageProps {
   townName: string;
   townType: string; // "Township", "Borough", etc.
+  metaTitle?: string;
+  metaDescription?: string;
+  heading?: string;
 }
 
 // Function to generate Google Maps embed URL for each town
@@ -63,17 +67,17 @@ const getGoogleMapsEmbedUrl = (townName: string, townType: string): string => {
   return townMaps[townKey] || `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196115.73214689275!2d-74.3890!3d39.8233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c16c287049b687%3A0x8c25d4d20966015a!2s${encodeURIComponent(townName + ' ' + townType)}%2C%20Ocean%20County%2C%20NJ!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus`;
 };
 
-export default function TownPage({ townName, townType }: TownPageProps) {
+export default function TownPage({ townName, townType, metaTitle, metaDescription, heading }: TownPageProps) {
   const { data: vehicles } = useQuery<Vehicle[]>({
     queryKey: ["/api/vehicles"],
   });
 
   const featuredVehicles = vehicles?.slice(0, 3) || [];
   const fullTownName = `${townName} ${townType}`;
-  
+
   // SEO optimization
-  const pageTitle = `${townName} Golf Carts - Ocean County's Premier Dealership | Sales, Service & Rentals`;
-  const pageDescription = `Professional golf cart sales, service, and rentals in ${fullTownName}. Ocean County Golf Carts offers premium DENAGO and EVOLUTION electric golf carts with expert service for ${townName} residents.`;
+  const pageTitle = metaTitle ?? `${townName} Golf Carts - Ocean County's Premier Dealership | Sales, Service & Rentals`;
+  const pageDescription = metaDescription ?? `Professional golf cart sales, service, and rentals in ${fullTownName}. Ocean County Golf Carts offers premium DENAGO and EVOLUTION electric golf carts with expert service for ${townName} residents.`;
   const pageKeywords = `${townName} golf carts, ${fullTownName} golf cart sales, Ocean County golf carts, electric golf carts ${townName}, golf cart service ${townName}, golf cart rentals ${townName}`;
   const canonicalUrl = `https://oceancountygolfcarts.com/${townName.toLowerCase().replace(/\s+/g, '-')}-${townType.toLowerCase()}-golf-carts`;
 
@@ -86,6 +90,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
     <div className="min-h-screen">
       {/* Schema Markup */}
       <SchemaMarkup schema={generateLocalBusinessSchema()} />
+      <SchemaMarkup schema={generateServiceSchema()} />
       <SchemaMarkup schema={generateBreadcrumbSchema(breadcrumbItems)} />
       
       <SEOHead 
@@ -101,7 +106,7 @@ export default function TownPage({ townName, townType }: TownPageProps) {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl font-bold mb-6 leading-tight">
-                {townName} Golf Carts - Ocean County's Premier Dealership
+                {heading ?? `${townName} Golf Carts - Ocean County's Premier Dealership`}
               </h1>
               <p className="text-xl mb-8 text-gray-100">
                 Professional golf cart sales, service, and rentals in {fullTownName}. 
@@ -379,11 +384,35 @@ export default function TownPage({ townName, townType }: TownPageProps) {
                 Why {townName} Chooses Ocean County Golf Carts
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Residents of {fullTownName} trust Ocean County Golf Carts for reliable, 
-                high-quality golf cart solutions. Our local expertise and commitment to customer 
+                Residents of {fullTownName} trust Ocean County Golf Carts for reliable,
+                high-quality golf cart solutions. Our local expertise and commitment to customer
                 service make us the preferred choice for {townName} golf cart needs.
               </p>
-              
+
+              <p className="text-lg text-gray-600 mb-6">
+                Looking for golf carts for sale in {townName}? Browse our{" "}
+                <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-blue-600 underline hover:text-blue-800">
+                  electric and LSV golf cart inventory in Ocean County
+                </Link>{" "}
+                or view our full selection of{" "}
+                <Link href={`${BASE_URL}/inventory`} className="text-blue-600 underline hover:text-blue-800">
+                  New Jersey golf carts
+                </Link>{" "}
+                at our Ocean County dealership.
+              </p>
+
+              <p className="text-lg text-gray-600 mb-6">
+                Prefer to rent? Reserve a{" "}
+                <Link href={`${BASE_URL}/rentals`} className="text-blue-600 underline hover:text-blue-800">
+                  golf cart rental in {townName}
+                </Link>
+                . Need repairs? We offer full{" "}
+                <Link href={`${BASE_URL}/services`} className="text-blue-600 underline hover:text-blue-800">
+                  golf cart service in {townName}
+                </Link>{" "}
+                and mobile repair throughout Ocean County, NJ.
+              </p>
+
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-green-500" />

@@ -45,6 +45,7 @@ export default function Footer() {
             <div>
               <ul className="space-y-2">
                 <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-gray-600 hover:text-gray-900 text-sm">GOLF CARTS FOR SALE</Link></li>
                 <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
                 <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
                 <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
@@ -95,6 +96,7 @@ export default function Footer() {
             <div className="md:col-span-1">
               <ul className="space-y-2">
                 <li><Link href={`${BASE_URL}/inventory`} className="text-gray-600 hover:text-gray-900 text-sm">NEW GOLF CARTS</Link></li>
+                <li><Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-gray-600 hover:text-gray-900 text-sm">GOLF CARTS FOR SALE</Link></li>
                 <li><Link href={`${BASE_URL}/brands/denago`} className="text-gray-600 hover:text-gray-900 text-sm">DENAGO</Link></li>
                 <li><Link href={`${BASE_URL}/brands/evolution`} className="text-gray-600 hover:text-gray-900 text-sm">EVOLUTION</Link></li>
                 <li><Link href={`${BASE_URL}/about`} className="text-gray-600 hover:text-gray-900 text-sm">ABOUT</Link></li>
@@ -237,7 +239,10 @@ export default function Footer() {
               <Link href={`${BASE_URL}/terms`} className="hover:text-gray-900 ml-1">Terms of Service</Link>
             </div>
             <div className="text-gray-600 text-sm">
-              Ocean County Golf Carts - Serving all Ocean County towns with premium golf carts and exceptional service.
+              <Link href={`${BASE_URL}/`} className="hover:text-gray-900">
+                Ocean County Golf Carts — Authorized NJ Golf Cart Dealership
+              </Link>
+              , serving all Ocean County towns with premium golf carts and exceptional service.
             </div>
           </div>
         </div>

@@ -1,10 +1,16 @@
 import { BASE_URL } from "@/config/urls";
 import TownPage from "@/components/TownPage";
 
+interface TownPageOverrides {
+  metaTitle?: string;
+  metaDescription?: string;
+  heading?: string;
+}
+
 // Template function to create town-specific pages
-export const createTownPage = (townName: string, townType: string) => {
+export const createTownPage = (townName: string, townType: string, overrides: TownPageOverrides = {}) => {
   return function TownSpecificPage() {
-    return <TownPage townName={townName} townType={townType} />;
+    return <TownPage townName={townName} townType={townType} {...overrides} />;
   };
 };
 
@@ -40,5 +46,6 @@ export const ShipBottomPage = createTownPage("Ship Bottom", "Borough");
 export const SouthTomsRiverPage = createTownPage("South Toms River", "Borough");
 export const StaffordTPage = createTownPage("Stafford", "Township");
 export const SurfCityPage = createTownPage("Surf City", "Borough");
-export const TomsRiverTPage = createTownPage("Toms River", "Township");
+// Note: Toms River uses a dedicated, sales-focused page (TomsRiverGolfCartsPage)
+// wired directly in App.tsx, so it is intentionally not created from this template.
 export const TuckertonPage = createTownPage("Tuckerton", "Borough");
