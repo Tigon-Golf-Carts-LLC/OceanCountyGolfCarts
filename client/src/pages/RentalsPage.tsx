@@ -14,9 +14,19 @@ import { Check, Phone, Users, Car } from "lucide-react";
 
 const rentalFaqs = [
   {
+    question: "How much does it cost to rent a golf cart in New Jersey?",
+    answer:
+      "In Ocean County, NJ, golf cart rentals start at $245 per day for a 4-seater, with 6-seater carts from $295/day. Weekly rentals run $1,050 for a 4-seater and $1,400 for a 6-seater, and monthly rates start at $2,800. The longer you rent, the lower your effective daily rate — up to 60%+ off."
+  },
+  {
     question: "How much does it cost to rent a golf cart in Ocean County?",
     answer:
       "Golf cart rentals start at $245 for a 1-day 4-seater rental. Weekly 4-seater rentals are $1,050 (about $150/day) and monthly rentals are $2,800. Six-seater carts start at $295/day and utility carts start at $245/day. Longer rentals unlock the biggest savings — up to 60%+ off the daily rate."
+  },
+  {
+    question: "What is the minimum golf cart rental period?",
+    answer:
+      "Our minimum rental is a single 24-hour day, and rentals are billed in 24-hour increments. Most shore visitors book weekly rentals, which offer the best value at about $150/day for a 4-seater."
   },
   {
     question: "How much is it to rent a golf cart for a week?",
@@ -293,6 +303,115 @@ export default function RentalsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* How Much Does It Cost — featured snippet target + pricing table */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 text-center">
+              How Much Does It Cost to Rent a Golf Cart?
+            </h2>
+            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-center">
+              A golf cart rental in Ocean County, NJ costs $245 per day for a 4-seater and $295 per
+              day for a 6-seater, with weekly rentals from $1,050. The longer you book, the lower your
+              daily rate — monthly rentals bring a 4-seater down to about $94/day. Here is our full
+              golf cart rental price list:
+            </p>
+
+            <div className="overflow-x-auto rounded-lg shadow-lg bg-white">
+              <table className="w-full min-w-[640px] text-left border-collapse">
+                <thead>
+                  <tr className="bg-theme-primary text-white">
+                    <th className="px-6 py-4 font-semibold">Cart Type</th>
+                    <th className="px-6 py-4 font-semibold text-center">Daily</th>
+                    <th className="px-6 py-4 font-semibold text-center">3-Day</th>
+                    <th className="px-6 py-4 font-semibold text-center">Weekly</th>
+                    <th className="px-6 py-4 font-semibold text-center">Monthly</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-medium text-gray-900">4-Seater Golf Cart</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$245</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$685</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$1,050</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$2,800</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-medium text-gray-900">6-Seater Golf Cart</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$295</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$735</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$1,400</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$3,500</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 font-medium text-gray-900">Utility Golf Cart</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$245</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$685</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$1,050</td>
+                    <td className="px-6 py-4 text-center text-gray-700">$2,800</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-gray-500 mt-4 text-center">
+              Prices exclude a refundable security deposit. A $6/mile delivery fee applies for
+              locations beyond 10 miles. All rentals are billed in 24-hour increments.
+            </p>
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="py-16 px-4 bg-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-gray-900 text-center">
+              Golf Cart Rental — How It Works
+            </h2>
+            <ol className="space-y-6 max-w-2xl mx-auto">
+              <li className="flex items-start gap-4">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-theme-orange text-white font-bold flex items-center justify-center">1</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Choose your cart</h3>
+                  <p className="text-gray-700">Pick a 4-seater, 6-seater, or utility golf cart based on your group size and how you'll use it.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-theme-orange text-white font-bold flex items-center justify-center">2</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Select your dates</h3>
+                  <p className="text-gray-700">Book daily, 3-day, weekly, or monthly — just call us with your dates and delivery address to lock in your rate.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-theme-orange text-white font-bold flex items-center justify-center">3</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">We deliver</h3>
+                  <p className="text-gray-700">We bring your cart to your door anywhere in Ocean County, fully charged, insured, and ready to ride.</p>
+                </div>
+              </li>
+              <li className="flex items-start gap-4">
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-theme-orange text-white font-bold flex items-center justify-center">4</span>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Enjoy your ride</h3>
+                  <p className="text-gray-700">Cruise to the beach, the marina, or downtown — and when you're done, we pick it up. No hassle.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        {/* Golf cart rentals near me — geo anchor */}
+        <section className="py-12 px-4 bg-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">Golf Cart Rentals Near You in Ocean County, NJ</h2>
+            <p className="text-lg text-gray-700">
+              Looking for <strong>golf cart rentals near me</strong> in Ocean County, NJ? We deliver to
+              Toms River, Barnegat, Lacey Township, Long Beach Island (LBI), Point Pleasant, Seaside,
+              Stafford, and every surrounding area. Whether you need a one-day golf cart rental for an
+              event or a weekly cart for your shore vacation, book early during peak season and we'll
+              bring it to you.
+            </p>
           </div>
         </section>
 

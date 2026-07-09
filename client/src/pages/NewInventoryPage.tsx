@@ -52,8 +52,8 @@ export default function NewInventoryPage() {
     <>
       <SEOHead
         title="New Jersey Golf Carts for Sale | Browse Our NJ Inventory"
-        description="Shop new & electric golf carts for sale in New Jersey. Ocean County Golf Carts carries Evolution & Denago — financing available. Visit us today!"
-        keywords="new jersey golf carts, new jersey golf carts for sale, NJ golf carts for sale, golf cart inventory, DENAGO, EVOLUTION, Ocean County golf carts"
+        description="Golf carts for sale near me in Ocean County, NJ. Shop electric, LSV & street legal golf carts from Evolution & Denago. Financing available — call today!"
+        keywords="golf carts for sale near me, electric golf carts for sale near me, golf cart sales near me, street legal golf carts nj, lsv golf carts for sale, new jersey golf carts for sale, NJ golf carts for sale, Ocean County golf carts, DENAGO, EVOLUTION"
         canonicalUrl="https://oceancountygolfcarts.com/inventory"
         ogImage="/attached_assets/Ocean County New Jersey Golf Carts_1756131126751.png"
       />
@@ -308,6 +308,136 @@ export default function NewInventoryPage() {
               <Link href={`${BASE_URL}/contact`}>
                 <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-blue-50">
                   Request a Quote
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Golf Carts Near Me — Ocean County */}
+        <section className="py-16 bg-gray-50 border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Golf Carts for Sale Near You — Serving Ocean County, NJ
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Searching for <strong>golf carts for sale near me</strong>? Ocean County Golf Carts
+              is your local dealership for new electric and street-legal carts across the Jersey
+              Shore. We deliver and service golf carts <strong>near Toms River, Barnegat, and Lacey
+              Township</strong>, as well as Brick, Lakewood, Point Pleasant, Seaside Heights,
+              Stafford, Manahawkin, Long Beach Island, Jackson, and every surrounding Ocean County
+              community. From beachfront neighborhoods to 55+ communities and lakeside towns,
+              we help buyers find the right cart close to home.
+            </p>
+            <p className="text-lg text-gray-700">
+              Looking for <strong>golf cart sales near me</strong>? Our golf cart sales team serves
+              Ocean County and all of NJ — visit our dealership or shop online, and we'll arrange free
+              local delivery straight to your driveway. Browse the full inventory above or call
+              804-585-7301 to check current availability in your town.
+            </p>
+          </div>
+        </section>
+
+        {/* Electric Golf Carts Near Me */}
+        <section className="py-16 bg-white border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Electric Golf Carts for Sale Near You in Ocean County, NJ
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              Every cart we sell is 100% electric, which makes them a perfect fit for New Jersey's
+              shore communities. If you've been shopping for <strong>electric golf carts for sale near
+              me</strong>, you'll appreciate quiet, emissions-free driving, low maintenance, and no
+              trips to the gas station. An <strong>electric golf cart in Ocean County</strong> is
+              ideal for short runs to the beach, the marina, or downtown, where lithium-battery models
+              deliver the extended range you need for a full day out.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Our all-electric inventory features Evolution and Denago models with modern lithium
+              batteries, fast home charging from a standard outlet, and real-world range that comfortably
+              covers most local trips. We handle setup, charging guidance, and free local delivery
+              throughout Ocean County so your cart arrives ready to ride.
+            </p>
+            <p className="text-lg text-gray-700">
+              Popular picks include the{" "}
+              <Link href={`${BASE_URL}/vehicles/evolution-d6-max-gt4`} className="text-blue-600 underline hover:text-blue-800">
+                Evolution D6 Max GT4
+              </Link>{" "}
+              for larger families and the{" "}
+              <Link href={`${BASE_URL}/vehicles/denago-ev-nomad`} className="text-blue-600 underline hover:text-blue-800">
+                Denago EV Nomad
+              </Link>
+              , both electric and available for delivery across NJ.
+            </p>
+          </div>
+        </section>
+
+        {/* Street Legal Golf Carts NJ callout */}
+        <section className="py-16 bg-gray-50 border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white border-l-4 border-theme-orange rounded-lg shadow-sm p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Street Legal Golf Carts for Sale in NJ
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Want to drive on local roads? We sell street-legal, LSV-compliant golf carts built to
+                New Jersey standards — with headlights, turn signals, seat belts, mirrors, a windshield,
+                and a 17-digit VIN so your cart can be titled, registered, and insured. Street-legal
+                models can legally travel on Ocean County roads posted at 25 mph or less, making them a
+                practical second vehicle for beach and lake communities.
+              </p>
+              <Link href={`${BASE_URL}/street-legal-golf-carts-nj`}>
+                <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
+                  See Full NJ Street-Legal Details
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* LSV Golf Carts NJ callout */}
+        <section className="py-16 bg-white border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-blue-50 border-l-4 border-theme-primary rounded-lg shadow-sm p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                LSV Golf Carts for Sale — NJ Street Legal Options
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                A Low Speed Vehicle (LSV) is a road-legal golf cart with a top speed of 20–25 mph and
+                the DOT safety equipment New Jersey requires for registration. Find LSV golf carts for
+                sale <strong>near Toms River, Ocean County, and throughout NJ</strong> — perfect for
+                cruising the neighborhood, running errands, or getting to the beach without a full-size
+                car. We'll help you choose an LSV that qualifies and walk you through titling for your town.
+              </p>
+              <Link href={`${BASE_URL}/lsv-golf-carts-nj`}>
+                <Button size="lg" className="bg-theme-primary hover:bg-blue-800 text-white">
+                  Explore LSV Golf Carts in NJ
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* 2 Passenger Golf Carts category callout */}
+        <section className="py-16 bg-gray-50 border-t">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              2 Passenger Golf Carts
+            </h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Need something compact and easy to park? Our <strong>2 Passenger Golf Carts</strong> are
+              nimble, affordable, and ideal for couples, quick neighborhood trips, and tight beach-town
+              streets. Compare two popular electric options below:
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href={`${BASE_URL}/vehicles/evolution-classic-2-plus`}>
+                <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-blue-50">
+                  Evolution Classic 2 Plus — 2 Passenger Golf Cart
+                </Button>
+              </Link>
+              <Link href={`${BASE_URL}/vehicles/evolution-classic-2-pro`}>
+                <Button size="lg" variant="outline" className="border-theme-primary text-theme-primary hover:bg-blue-50">
+                  Evolution Classic 2 Pro — 2 Passenger Golf Cart
                 </Button>
               </Link>
             </div>

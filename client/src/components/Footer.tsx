@@ -230,6 +230,42 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* NJ Golf Cart Resources */}
+        <div className="border-t border-gray-200 pt-8 mb-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-6 text-center">
+            NJ Golf Cart Resources
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
+            <Link href={`${BASE_URL}/inventory`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Golf Carts NJ
+            </Link>
+            <Link href={`${BASE_URL}/golf-carts-for-sale`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Golf Carts for Sale NJ
+            </Link>
+            <Link href={`${BASE_URL}/services`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Golf Cart Service NJ
+            </Link>
+            <Link href={`${BASE_URL}/rentals`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Golf Cart Rentals NJ
+            </Link>
+            <Link href={`${BASE_URL}/street-legal-golf-carts-nj`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Street Legal Golf Carts NJ
+            </Link>
+            <Link href={`${BASE_URL}/lsv-golf-carts-nj`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              LSV Golf Carts NJ
+            </Link>
+            <Link href={`${BASE_URL}/new-jersey-shore-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              Jersey Shore Golf Carts
+            </Link>
+            <Link href={`${BASE_URL}/north-jersey-golf-carts`} className="text-gray-600 text-sm hover:text-blue-600 transition-colors">
+              North Jersey Golf Carts
+            </Link>
+          </div>
+          <p className="text-center text-gray-700 font-semibold text-sm mt-6">
+            Ocean County Golf Carts — Your #1 Golf Cart NJ Dealer.
+          </p>
+        </div>
+
         {/* Bottom Footer */}
         <div className="border-t border-gray-200 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

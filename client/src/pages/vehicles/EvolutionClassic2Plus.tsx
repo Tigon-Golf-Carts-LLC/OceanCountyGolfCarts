@@ -10,10 +10,10 @@ import { BASE_URL } from "@/config/urls";
 export default function EvolutionClassic2Plus() {
   return (
     <>
-      <SEOHead 
-        title="EVOLUTION® Classic 2 Plus"
-        description="Discover the EVOLUTION® Classic 2 Plus with timeless design and reliable performance for traditional golf. Call 1-844-844-6638."
-        keywords="EVOLUTION Classic 2 Plus, 2-passenger golf cart, compact golf cart, traditional design, EVOLUTION dealer Ocean County"
+      <SEOHead
+        title="2 Passenger Golf Cart Dealer | Evolution Classic 2 Plus | Ocean County Golf Carts"
+        description="Your local 2 passenger golf cart dealer in NJ. The Evolution Classic 2 Plus offers timeless design and reliable performance, with test drives, financing, and warranty from Ocean County Golf Carts. Call 1-844-844-6638."
+        keywords="2 passenger golf cart dealer, 2 passenger golf cart dealership, EVOLUTION Classic 2 Plus, 2-passenger golf cart, compact golf cart, traditional design, EVOLUTION dealer Ocean County"
         ogImage="/attached_assets/EVOLUTIONCLASSIC2PLUS_1751893115779_1753135231314.jpg"
       />
       
@@ -42,7 +42,7 @@ export default function EvolutionClassic2Plus() {
                   </Badge>
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                  Classic 2 Plus
+                  Evolution Classic 2 Plus <span className="block text-2xl lg:text-3xl text-theme-primary mt-2">2 Passenger Golf Cart | Ocean County Dealer</span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                   Compact two-passenger classic golf cart with timeless design and reliable performance. Perfect for traditional golf and essential transportation needs.
@@ -209,6 +209,22 @@ export default function EvolutionClassic2Plus() {
                 </Card>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Local 2-Passenger Dealer Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Your Local 2 Passenger Golf Cart Dealer in NJ</h2>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Ocean County Golf Carts is the go-to 2 passenger golf cart dealer for New Jersey buyers who want a compact, easy-to-park cart without giving up quality. As an authorized Evolution 2 passenger golf cart dealership, we stock the models that fit tight garages, small yards, and quick errands — including the Evolution Classic 2 Plus, the{" "}
+              <Link href={`${BASE_URL}/vehicles/evolution-classic-2-pro`} className="text-theme-primary underline font-medium">Classic 2 Pro</Link>, and the{" "}
+              <Link href={`${BASE_URL}/vehicles/evolution-d5-maverick-4`} className="text-theme-primary underline font-medium">D5 Maverick 4</Link>.
+            </p>
+            <h3 className="text-2xl font-semibold mb-3 text-gray-900">Your Local 2 Passenger Golf Cart Dealership in NJ</h3>
+            <p className="text-gray-600 leading-relaxed">
+              Buying from a full-service 2 passenger golf cart dealership means more than a price tag. Schedule a no-pressure test drive, explore flexible financing, and drive off covered by a factory-backed warranty — all handled by our Ocean County team. Whether you are comparing 2 passenger models or upgrading from an older cart, we help you pick the right fit and keep it running with local service and parts long after the sale.
+            </p>
           </div>
         </section>
 

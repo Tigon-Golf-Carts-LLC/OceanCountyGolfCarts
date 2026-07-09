@@ -23,6 +23,11 @@ import PrivacyPage from "@/pages/PrivacyPage";
 import TermsPage from "@/pages/TermsPage";
 import GolfCartsForSalePage from "@/pages/GolfCartsForSalePage";
 import TomsRiverGolfCartsPage from "@/pages/TomsRiverGolfCartsPage";
+import StreetLegalGolfCartsPage from "@/pages/StreetLegalGolfCartsPage";
+import LSVGolfCartsPage from "@/pages/LSVGolfCartsPage";
+import NorthJerseyGolfCartsPage from "@/pages/NorthJerseyGolfCartsPage";
+import NewJerseyShoreGolfCartsPage from "@/pages/NewJerseyShoreGolfCartsPage";
+import GolfCartBuyingGuidePage from "@/pages/GolfCartBuyingGuidePage";
 // Vehicle Page Imports
 import EvolutionD5Ranger6Plus from "@/pages/vehicles/EvolutionD5Ranger6Plus";
 import EvolutionD5Ranger22Plus from "@/pages/vehicles/EvolutionD5Ranger22Plus";
@@ -72,6 +77,11 @@ function App() {
             <Route path="/" component={HomePage} />
             <Route path="/inventory" component={NewInventoryPage} />
             <Route path="/golf-carts-for-sale" component={GolfCartsForSalePage} />
+            <Route path="/street-legal-golf-carts-nj" component={StreetLegalGolfCartsPage} />
+            <Route path="/lsv-golf-carts-nj" component={LSVGolfCartsPage} />
+            <Route path="/north-jersey-golf-carts" component={NorthJerseyGolfCartsPage} />
+            <Route path="/new-jersey-shore-golf-carts" component={NewJerseyShoreGolfCartsPage} />
+            <Route path="/golf-cart-buying-guide" component={GolfCartBuyingGuidePage} />
             <Route path="/rentals" component={RentalsPage} />
             <Route path="/services" component={NewServicesPage} />
             <Route path="/about" component={NewAboutPage} />

@@ -77,7 +77,7 @@ export default function EvolutionPage() {
       <SEOHead 
         title="EVOLUTION Golf Carts"
         description="Explore EVOLUTION Golf Carts featuring Ranger, Forester, and Turfman series with premium LED lighting. Call 1-844-844-6638."
-        keywords="EVOLUTION golf carts, Ranger series, Forester series, Turfman series, electric vehicles"
+        keywords="EVOLUTION golf carts, electric golf carts for sale, Ranger series, Forester series, Turfman series, electric vehicles"
         canonicalUrl="https://oceancountygolfcarts.com/brands/evolution"
         ogImage="/attached_assets/EVOLUTIOND5RANGER6_1751893159004_1753135350623.jpg"
       />
@@ -91,9 +91,14 @@ export default function EvolutionPage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">EVOLUTION</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Advanced recreational vehicles with innovative technology and superior comfort
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-6">
+              Advanced electric golf carts for sale — innovative technology and superior comfort
             </p>
+            <Link href={`${BASE_URL}/inventory`}>
+              <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
+                Shop All Electric Golf Carts →
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

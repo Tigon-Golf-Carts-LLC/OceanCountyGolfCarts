@@ -4,18 +4,35 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import { Zap, Shield, Settings, Award, Phone, MapPin, Clock, Users, Battery, Gauge, Car } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import vehicleImage from "@assets/EVOLUTIOND6MAXGT6_1751893159004_1753135350620.jpg";
 
 import { BASE_URL } from "@/config/urls";
 export default function EvolutionD6MaxGT6() {
   return (
     <>
-      <SEOHead 
-        title="EVOLUTION® D6 Max GT6"
-        description="Experience the EVOLUTION® D6 Max GT6 with high performance and luxury features for six passengers. Call 1-844-844-6638."
-        keywords="EVOLUTION D6 Max GT6, high performance golf cart, 6-passenger, luxury features, maximum power, EVOLUTION dealer Ocean County"
+      <SEOHead
+        title="EVOLUTION® D6 Max GT6 — LSV / Street Legal Golf Cart"
+        description="The EVOLUTION® D6 Max GT6 reaches 25+ mph and can be equipped as a street-legal Low Speed Vehicle (LSV) for New Jersey roads. Call 1-844-844-6638."
+        keywords="EVOLUTION D6 Max GT6, LSV golf cart, street legal golf cart NJ, low speed vehicle, high performance golf cart, 6-passenger, luxury features, maximum power, EVOLUTION dealer Ocean County"
         ogImage="/attached_assets/EVOLUTIOND6MAXGT6_1751893159004_1753135350620.jpg"
       />
+
+      <SchemaMarkup schema={{
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "EVOLUTION D6 Max GT6 — LSV / Street Legal Golf Cart",
+        "brand": { "@type": "Brand", "name": "EVOLUTION" },
+        "vehicleConfiguration": "LSV",
+        "description": "The EVOLUTION D6 Max GT6 is a 6-passenger electric golf cart that reaches 25+ mph and can be equipped and registered as a street-legal Low Speed Vehicle (LSV) for New Jersey roads posted 25 mph or less.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@type": "Organization", "name": "Ocean County Golf Carts" },
+          "url": "https://oceancountygolfcarts.com/vehicles/evolution-d6-max-gt6"
+        }
+      }} />
       
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         <nav className="py-4 px-4 bg-white border-b border-gray-200">
@@ -36,17 +53,30 @@ export default function EvolutionD6MaxGT6() {
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <div className="mb-4">
+                <div className="mb-4 flex flex-wrap gap-2">
                   <Badge className="bg-theme-primary text-white px-4 py-2 text-sm font-semibold">
                     EVOLUTION® D6 MAX
                   </Badge>
+                  <Badge className="bg-theme-orange text-white px-4 py-2 text-sm font-semibold">
+                    LSV · Street Legal
+                  </Badge>
                 </div>
                 <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                  Max GT6
+                  Max GT6 <span className="block text-2xl lg:text-3xl text-theme-primary mt-2">LSV / Street Legal Golf Cart</span>
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  Six-passenger high-performance golf cart with maximum power and luxury features. The ultimate combination of performance, comfort, and style.
+                  Six-passenger high-performance golf cart with maximum power and luxury features. Reaching 25+ mph, this D6 MAX qualifies as a Low Speed Vehicle (LSV) and can be equipped and registered as a street-legal golf cart for New Jersey roads posted 25 mph or less — the ultimate combination of performance, comfort, and style.
                 </p>
+
+                {/* Street-Legal LSV blurb */}
+                <div className="mb-8 p-5 bg-blue-50 border border-blue-100 rounded-lg">
+                  <h2 className="text-lg font-semibold text-theme-primary mb-2">Street-Legal LSV in New Jersey</h2>
+                  <p className="text-gray-700">
+                    Because the D6 Max GT6 tops 25 mph, it can be outfitted with the DOT equipment required to register as a Low Speed Vehicle and driven legally on NJ streets posted 25 mph or less. Learn more about{" "}
+                    <Link href={`${BASE_URL}/street-legal-golf-carts-nj`} className="text-theme-primary underline font-medium">street-legal golf carts in NJ</Link>{" "}and{" "}
+                    <Link href={`${BASE_URL}/lsv-golf-carts-nj`} className="text-theme-primary underline font-medium">LSV golf carts in NJ</Link>.
+                  </p>
+                </div>
                 
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="p-4 bg-gray-50 rounded-lg border">

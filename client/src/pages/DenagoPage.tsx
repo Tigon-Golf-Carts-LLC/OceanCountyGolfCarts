@@ -18,7 +18,7 @@ export default function DenagoPage() {
       <SEOHead 
         title="DENAGO"
         description="Premium DENAGO recreational vehicles with advanced suspension systems and high-performance electric motors. Call 1-844-844-6638."
-        keywords="DENAGO golf carts, premium recreational vehicles, electric vehicles, Ocean County"
+        keywords="DENAGO golf carts, electric golf carts for sale, premium recreational vehicles, electric vehicles, Ocean County"
         canonicalUrl="https://oceancountygolfcarts.com/brands/denago"
         ogImage="https://pixabay.com/get/g2710ff58f7ab50725c0d101c0fcdfb7325183aedf06d94408c107ce4e8347053f40265e8288a3384c4f39deb14c0b7525de8e49901f584f95ec44a2bde1953de_1280.jpg"
       />
@@ -32,9 +32,14 @@ export default function DenagoPage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">DENAGO</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Premium recreational vehicles engineered for performance and built to last
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-6">
+              Premium electric golf carts for sale — engineered for performance and built to last
             </p>
+            <Link href={`${BASE_URL}/inventory`}>
+              <Button size="lg" className="bg-theme-orange hover:bg-orange-600 text-white">
+                Shop All Electric Golf Carts →
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
