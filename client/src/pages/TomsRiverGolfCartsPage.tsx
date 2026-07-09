@@ -243,6 +243,23 @@ export default function TomsRiverGolfCartsPage() {
             </Link>
           </div>
         </div>
+        <div className="max-w-5xl mx-auto mt-8 text-center">
+          <p className="text-gray-700">
+            Want a road-ready cart? Learn about{" "}
+            <Link href={`${BASE_URL}/street-legal-golf-carts-nj`} className="text-blue-600 underline hover:text-blue-800">
+              street legal golf carts in NJ
+            </Link>{" "}
+            and{" "}
+            <Link href={`${BASE_URL}/lsv-golf-carts-nj`} className="text-blue-600 underline hover:text-blue-800">
+              LSV golf carts
+            </Link>
+            , or explore{" "}
+            <Link href={`${BASE_URL}/new-jersey-shore-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+              New Jersey shore golf carts
+            </Link>
+            .
+          </p>
+        </div>
       </section>
 
       {/* Contact + Map */}

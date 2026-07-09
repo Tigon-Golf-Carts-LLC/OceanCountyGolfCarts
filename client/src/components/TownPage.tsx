@@ -413,6 +413,32 @@ export default function TownPage({ townName, townType, metaTitle, metaDescriptio
                 and mobile repair throughout Ocean County, NJ.
               </p>
 
+              <p className="text-lg text-gray-600 mb-6">
+                <strong>Street-legal golf carts in {townName}:</strong> New Jersey law permits Low Speed
+                Vehicles (LSVs) on roads posted at 25 mph or less. Our Ocean County dealership can help you
+                find a{" "}
+                <Link href={`${BASE_URL}/street-legal-golf-carts-nj`} className="text-blue-600 underline hover:text-blue-800">
+                  street-legal, NJ-compliant golf cart
+                </Link>{" "}
+                or an{" "}
+                <Link href={`${BASE_URL}/lsv-golf-carts-nj`} className="text-blue-600 underline hover:text-blue-800">
+                  LSV for New Jersey roads
+                </Link>
+                . Heading to the beach? Explore our{" "}
+                <Link href={`${BASE_URL}/new-jersey-shore-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                  New Jersey shore golf carts
+                </Link>
+                .
+              </p>
+
+              <p className="text-lg text-gray-600 mb-6">
+                Looking for golf carts in NJ?{" "}
+                <Link href={`${BASE_URL}/`} className="text-blue-600 underline hover:text-blue-800">
+                  Ocean County Golf Carts
+                </Link>{" "}
+                is your local Ocean County dealer, proudly serving {townName} and every town across New Jersey.
+              </p>
+
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-6 h-6 text-green-500" />

@@ -60,10 +60,10 @@ export default function NewAboutPage() {
 
   return (
     <>
-      <SEOHead 
-        title="About Ocean County Golf Carts"
-        description="Learn about Ocean County Golf Carts, New Jersey's trusted dealer serving all 33 municipalities since 2010. Call 1-844-844-6638."
-        keywords="Ocean County golf carts, about us, golf cart dealer New Jersey, DENAGO dealer, EVOLUTION dealer"
+      <SEOHead
+        title="About Ocean County Golf Carts | Your Local NJ Golf Cart Dealer"
+        description="Ocean County Golf Carts is your local NJ golf cart dealer in Toms River. Authorized Evolution & Denago dealer serving South Jersey shore towns. Call 804-585-7301."
+        keywords="golf cart NJ, NJ golf cart dealer, Ocean County golf carts, South Jersey golf carts, golf cart dealer New Jersey, DENAGO dealer, EVOLUTION dealer, Toms River golf carts"
         ogImage="/attached_assets/Ocean County New Jersey Golf Carts (1)_1756131126751.png"
       />
       
@@ -162,8 +162,38 @@ export default function NewAboutPage() {
           </div>
         </section>
 
-        {/* Our Values */}
+        {/* Proudly Serving South Jersey */}
         <section className="py-16 bg-gray-50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Proudly Serving South Jersey</h2>
+            <div className="space-y-4 text-gray-600 text-lg">
+              <p>
+                Ocean County Golf Carts is rooted in South Jersey. From our showroom at
+                16 Anchor Square in Toms River, we've spent more than a decade helping shore
+                families, retirees, and business owners find the right ride for the way people
+                actually live down here. As an authorized <strong>Evolution</strong> and{" "}
+                <strong>Denago</strong> dealer, we're proud to carry the brands that hold up to
+                salt air, sandy driveways, and long summer seasons at the Jersey Shore.
+              </p>
+              <p>
+                Golf carts are part of the culture across South Jersey. In beach communities and
+                shore towns from Long Beach Island (LBI) to Point Pleasant, carts are how neighbors
+                get to the bay, the boardwalk, and the marina. In 55+ and HOA neighborhoods, they're
+                the friendly, low-cost way to reach the clubhouse, the pool, or a friend's driveway.
+                We stay involved in the NJ communities we serve, supporting local events and
+                treating every customer like a neighbor — because most of them are. Learn more about
+                us on our{" "}
+                <Link href={`${BASE_URL}/`} className="text-blue-600 underline hover:text-blue-800">
+                  homepage
+                </Link>
+                .
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Values */}
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
@@ -189,7 +219,7 @@ export default function NewAboutPage() {
         </section>
 
         {/* Our Team */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
@@ -217,7 +247,7 @@ export default function NewAboutPage() {
         </section>
 
         {/* Service Area */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Service Area</h2>
@@ -274,6 +304,92 @@ export default function NewAboutPage() {
                     <span className="text-blue-600 font-medium">{city}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* NJ Golf Cart Authority Hub */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Local NJ Golf Cart Dealer</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Everything New Jersey golf cart owners need to know about buying, driving, and
+                maintaining a cart in Ocean County — from a dealer who does it every day.
+              </p>
+            </div>
+
+            <div className="space-y-6 text-gray-700 text-lg">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">NJ Golf Cart Laws & Regulations</h3>
+                <p>
+                  Before you drive on public roads, it helps to understand how New Jersey treats golf
+                  carts. A traditional golf cart tops out around 15–19 mph and generally isn't
+                  street-legal on public roads. To drive legally, most residents choose a Low Speed
+                  Vehicle (LSV) — a four-wheeled electric vehicle with a top speed of 20–25 mph.
+                  Under New Jersey's Low Speed Vehicle law, an LSV must be equipped with headlights,
+                  brake lights, turn signals, mirrors, a windshield, and seat belts, and it carries a
+                  17-digit VIN. That VIN lets you title, register, and insure the vehicle with the NJ
+                  MVC, and once registered an LSV can be driven on roads posted at 25 mph or less.
+                  Rather than quote specific statute numbers, we walk each buyer through the practical
+                  requirements so your cart is set up correctly for your town from day one.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">The Ocean County Golf Cart Market</h3>
+                <p>
+                  Ocean County is one of the busiest golf cart markets in the state, and demand keeps
+                  growing. Beach and bay towns, lakeside developments, sprawling 55+ communities, and
+                  HOA neighborhoods all lean on carts for short, everyday trips. That mix means buyers
+                  want very different things — a compact 2-seater for a gated community, a street-legal
+                  6-passenger LSV for family beach runs, or a rugged utility cart for a marina or
+                  business. You can browse what we have in stock on our{" "}
+                  <Link href={`${BASE_URL}/inventory`} className="text-blue-600 underline hover:text-blue-800">
+                    golf cart inventory
+                  </Link>
+                  , and if you only need a cart for a week at the shore, our{" "}
+                  <Link href={`${BASE_URL}/rentals`} className="text-blue-600 underline hover:text-blue-800">
+                    golf cart rentals
+                  </Link>{" "}
+                  are delivered throughout the county.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Why Electric Carts Rule NJ Shore Communities</h3>
+                <p>
+                  Nearly every cart sold in New Jersey today is electric, and the shore is exactly why.
+                  Short distances and low speed limits play to an electric cart's strengths: quiet
+                  operation that respects close-set beach neighborhoods, no gas to haul on a barrier
+                  island, and simple maintenance in a salt-air environment. Lithium-battery models add
+                  the range and longevity that make a cart practical all season long. For a household
+                  looking to cut down on second-car trips, an electric LSV is an easy, eco-friendly
+                  fit for life at the Jersey Shore.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Our Role in the NJ Golf Cart Ecosystem</h3>
+                <p>
+                  As a full-service, authorized Evolution and Denago dealer, we're more than a sales
+                  lot. We help you pick the right model, set it up to meet New Jersey's requirements,
+                  and keep it running for years with in-house{" "}
+                  <Link href={`${BASE_URL}/services`} className="text-blue-600 underline hover:text-blue-800">
+                    repair and maintenance
+                  </Link>
+                  . We deliver and service carts across every Ocean County town, including{" "}
+                  <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                    Toms River
+                  </Link>{" "}
+                  and{" "}
+                  <Link href={`${BASE_URL}/brick-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                    Brick Township
+                  </Link>
+                  . Whether you're buying your first cart or maintaining a fleet, we're the local NJ
+                  golf cart dealer your neighbors already trust.
+                </p>
               </div>
             </div>
           </div>

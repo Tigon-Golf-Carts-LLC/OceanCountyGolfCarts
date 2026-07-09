@@ -16,8 +16,37 @@ import SchemaMarkup, {
   generateBreadcrumbSchema,
   generateServiceSchema,
   generateOfferCatalogSchema,
-  generateAutoDealerSchema
+  generateAutoDealerSchema,
+  generateFAQSchema
 } from "@/components/SchemaMarkup";
+
+const homeFaqs = [
+  {
+    question: "Who sells golf carts near me in Ocean County, NJ?",
+    answer:
+      "Ocean County Golf Carts is the local authorized dealer for Evolution and Denago electric golf carts, serving all of Ocean County, NJ. Visit us in Toms River or shop our inventory online, then let us handle sales, financing, delivery, and service after the sale."
+  },
+  {
+    question: "Where is Ocean County Golf Carts located?",
+    answer:
+      "Our main showroom is at 16 Anchor Square, Toms River, NJ 08753, right in the heart of Ocean County. We also serve nearby communities including Brick, Lakewood, Barnegat, Lacey Township, Point Pleasant, Seaside, and Long Beach Island."
+  },
+  {
+    question: "What golf cart brands do you carry?",
+    answer:
+      "We are an authorized dealer for Evolution and Denago electric golf carts, offering 2, 4, and 6-passenger models in standard, lifted, and street-legal LSV configurations. Every cart is backed by factory warranties and genuine parts."
+  },
+  {
+    question: "Do you offer financing on golf carts?",
+    answer:
+      "Yes. We offer flexible financing, including 0% financing on select new models, so you can spread out payments. Our team will help you find the right cart and a payment plan that fits your budget."
+  },
+  {
+    question: "Do you deliver golf carts?",
+    answer:
+      "We deliver golf carts throughout Ocean County and across New Jersey — from the Jersey Shore to Central and North Jersey. Call 804-585-7301 for a delivery quote to your town."
+  }
+];
 
 export default function HomePage() {
   const { data: vehicles } = useQuery<Vehicle[]>({
@@ -30,8 +59,8 @@ export default function HomePage() {
     <div className="min-h-screen">
       <SEOHead
         title="New Jersey Golf Cart Dealership | Ocean County Golf Carts"
-        description="Ocean County Golf Carts is your authorized New Jersey golf cart dealership — shop Evolution & Denago carts for sale, rentals & repair. Call 804-585-7301."
-        keywords="new jersey golf cart dealership, golf cart dealership NJ, golf carts Ocean County, golf carts for sale, golf cart rentals, Evolution golf carts, Denago electric carts"
+        description="Looking for a golf cart near me? Ocean County Golf Carts is your local NJ dealer for Evolution & Denago carts — sales, rentals & repair. Call 804-585-7301."
+        keywords="golf cart near me, who sells golf carts near me, south jersey golf carts, golf cart Ocean County, new jersey golf cart dealership, golf carts for sale, golf cart rentals, Evolution golf carts, Denago electric carts"
         canonicalUrl="https://oceancountygolfcarts.com/"
         ogImage="/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg"
       />
@@ -42,6 +71,7 @@ export default function HomePage() {
       <SchemaMarkup schema={generateWebsiteSchema()} />
       <SchemaMarkup schema={generateServiceSchema()} />
       {vehicles && <SchemaMarkup schema={generateOfferCatalogSchema(vehicles)} />}
+      <SchemaMarkup schema={generateFAQSchema(homeFaqs)} />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-theme-primary via-blue-800 to-theme-primary text-white py-20 px-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: "linear-gradient(rgba(14, 46, 85, 0.8), rgba(59, 130, 246, 0.8), rgba(14, 46, 85, 0.8)), url('${BASE_URL}/attached_assets/Ocean County Golf Carts New Jersey 3_1753197335727.jpeg')"}}>
         <div className="max-w-7xl mx-auto">
@@ -83,6 +113,16 @@ export default function HomePage() {
                   Call Now 804-585-7301
                 </Button>
               </div>
+              <p className="mt-6 text-base text-gray-100">
+                We deliver golf carts throughout New Jersey — including{" "}
+                <Link href={`${BASE_URL}/north-jersey-golf-carts`} className="underline font-semibold hover:text-white">
+                  North Jersey
+                </Link>
+                , Central NJ, and the Jersey Shore.{" "}
+                <Link href={`${BASE_URL}/new-jersey-shore-golf-carts`} className="underline font-semibold hover:text-white">
+                  Explore Jersey Shore golf carts →
+                </Link>
+              </p>
             </div>
             <div className="relative">
               <img 
@@ -529,6 +569,118 @@ export default function HomePage() {
           <p className="text-gray-600 mb-8">
             Serving all 33 Ocean County municipalities! Professional golf cart sales, service, and rentals delivered throughout the region.
           </p>
+        </div>
+      </section>
+
+      {/* South Jersey Golf Carts Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6 text-gray-900 text-center">
+            South Jersey Golf Carts — Ocean County's Local Dealer
+          </h2>
+          <div className="text-lg text-gray-700 space-y-4">
+            <p>
+              Ocean County sits at the heart of South Jersey golf cart country. Our stretch of the
+              coast — from the barrier-island beaches of{" "}
+              <Link href={`${BASE_URL}/long-beach-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                Long Beach Island (LBI)
+              </Link>{" "}
+              to the lakes and neighborhoods of{" "}
+              <Link href={`${BASE_URL}/toms-river-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                Toms River
+              </Link>{" "}
+              and the bayside communities of{" "}
+              <Link href={`${BASE_URL}/barnegat-township-golf-carts`} className="text-blue-600 underline hover:text-blue-800">
+                Barnegat
+              </Link>{" "}
+              — is built for golf carts. Short distances, low speed limits, and endless summer trips
+              to the beach, marina, and downtown make an electric cart the perfect second vehicle.
+            </p>
+            <p>
+              As a local South Jersey dealer, Ocean County Golf Carts serves shore towns across the
+              region with new Evolution and Denago carts, street-legal LSV models, financing, delivery,
+              and in-house service. Whether you live year-round in Ocean County or own a summer place
+              along the Jersey Shore, we make owning a golf cart simple and stress-free.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Find a Golf Cart Near You Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
+              Find a Golf Cart Near You — Ocean County, NJ Dealer
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Searching for a golf cart near me? Ocean County Golf Carts is your local golf cart
+              Ocean County dealer, serving Toms River, Brick, Lakewood, Barnegat, Lacey Township,
+              Point Pleasant, Seaside, and Long Beach Island. Stop by our Toms River showroom or call
+              804-585-7301 and we'll help you find the right cart close to home.
+            </p>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://maps.google.com/maps?q=Ocean%20County%20Golf%20Carts%2016%20Anchor%20Square%20Toms%20River%20NJ%2008753&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ocean County Golf Carts — 16 Anchor Square, Toms River, NJ 08753"
+            />
+          </div>
+          <p className="text-center text-gray-600 mt-4">
+            Ocean County Golf Carts · 16 Anchor Square, Toms River, NJ 08753 · 804-585-7301
+          </p>
+        </div>
+      </section>
+
+      {/* What is a Golf Cart Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="text-3xl font-bold mb-6 text-gray-900 text-center">
+            What is a Golf Cart?
+          </h3>
+          <div className="text-lg text-gray-700 space-y-4">
+            <p>
+              A golf cart is a compact electric (or gas) vehicle originally designed to carry players
+              around a golf course, but today they're used for so much more. Modern carts come in a few
+              main types. A standard recreational cart tops out around 15–19 mph and is perfect for
+              cruising gated communities, campgrounds, and beach neighborhoods. A Low Speed Vehicle
+              (LSV) is a street-legal cart that reaches 20–25 mph and includes seat belts, lights, turn
+              signals, mirrors, a windshield, and a VIN, so it can be titled, registered, and insured
+              for local roads. Utility carts add cargo beds and towing capacity for property, farm, and
+              work use.
+            </p>
+            <p>
+              From weekend beach runs to daily errands, an electric golf cart is a quiet, eco-friendly,
+              and affordable way to get around Ocean County.{" "}
+              <Link href={`${BASE_URL}/inventory`} className="text-blue-600 underline hover:text-blue-800 font-semibold">
+                Browse our golf cart inventory
+              </Link>{" "}
+              to find the right type for you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10 text-gray-900 text-center">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {homeFaqs.map((faq, index) => (
+              <div key={index} className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900">{faq.question}</h3>
+                <p className="text-gray-700">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
